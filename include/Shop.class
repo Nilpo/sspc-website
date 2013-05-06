@@ -1,0 +1,353 @@
+<?
+/*
+##################################################
+#
+# $RCSfile: Shop.class,v $
+# Original Author...: Anthony L. Awtrey
+# Version...........: $Revision: 1.6 $
+# Last Modified By..: $Author: aawtrey $
+# Last Modified.....: $Date: 2005/06/03 13:28:42 $
+#
+# Copyright 2005 Anthony L. Awtrey
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
+#
+*/
+
+class Shop {
+
+  var $page;
+  var $db;
+  var $account;
+  var $items_per_page = 10;
+  var $error_string;
+  var $thumbdir       = 'thumbnails';
+
+  /*
+   * Class initialization
+   */
+  function Shop($inDbname,$inAccountid) {
+    global $_SERVER;
+    global $_SESSION;
+    global $_REQUEST;
+    global $_POST;
+    global $_GET;
+    $this->page              = new Page();
+    $this->page->title       = "Shopping Cart";
+    $this->page->description = "This is a Shopping Cart";
+    $this->db                = new Data($inDbname);
+    $this->account           = $inAccountid;
+    if ( ! is_writable($this->thumbdir) ) {
+      echo "<html><body><p>You must make the tumbnail directory '$thumbnails' writable to use this class!\n</p></body></html>";
+      return false;
+    }
+  }
+
+  function print_items($page='') {
+    if ( $page == '' ) { $page = 1; }
+    $item_count = $this->db->count_records();
+    $total_pages   = ceil( $item_count / $this->items_per_page );
+    if ( $item_count > $this->items_per_page ) {
+      $starting_item_number = ( ( $page * $this->items_per_page ) - $this->items_per_page ) +1;
+    } elseif ( $item_count == 0 ) {
+      $starting_item_number = 0;
+    } else {
+      $starting_item_number = 1;
+    }
+    if ( $page != $total_pages ) {
+      $ending_item_number   = $page * $this->items_per_page;
+    } elseif ( $item_count > $this->items_per_page ) {
+      $ending_item_number   = abs( ( $pages - ( $item_count / $this->items_per_page ) ) * $this->items_per_page);
+    } else {
+      $ending_item_number   = $item_count;
+    }
+    if ( $item_count > $this->items_per_page && $page != 1 )            { $prevpage = $page - 1; }
+    if ( $item_count > $this->items_per_page && $page != $total_pages ) { $nextpage = $page + 1; }
+    $this->page->content  = "<div class=\"graybg small\">\n";
+    $this->page->content .= "<div class=\"center\">$starting_item_number to $ending_item_number of $item_count total items</div>\n";
+    $this->page->content .= "</div>\n";
+    $page_links = "<div class=\"graybg small\">\n";
+    if ( $prevpage ) {
+      $page_links .= "<div class=\"left\">[<a href=\"index.php?page=$prevpage\">Previous Page</a>]</div>\n";
+    } else {
+      $page_links .= "<div class=\"left\"><span class=\"gray\">[Previous Page]</span></div>\n";
+    }
+    if ( $nextpage ) {
+      $page_links .= "<div class=\"right\">[<a href=\"index.php?page=$nextpage\">Next Page</a>]</div>\n";
+    } else {
+      $page_links .= "<div class=\"right\"><span class=\"gray\">[Next Page]</span></div>\n";
+    }
+    $page_links .= "</div>\n";
+    $this->page->content .= $page_links;
+    if ( $page > 1 ) {
+      $skip = ( $page * $this->items_per_page ) - $this->items_per_page;
+      $items = $this->db->get_records("","","catagory DESC LIMIT $skip,$this->items_per_page");
+    } else {
+      $items = $this->db->get_records("","","catagory DESC LIMIT $this->items_per_page");
+    }
+    if (is_array($items)) {
+      $this->page->content .= "<br />\n\n";
+      $this->page->content .= "<table class=\"full\">\n";
+      $this->page->content .= "<tr>\n";
+      $this->page->content .= "  <th width=\"100\">&nbsp;</th>\n";
+      $this->page->content .= "  <th>Name and Description</th>\n";
+      $this->page->content .= "  <th width=\"75\">Retail</th>\n";
+      $this->page->content .= "  <th width=\"75\">Price</th>\n";
+      $this->page->content .= "</tr>\n";
+      while ( list($key,$val) = each($items) ) {
+        $this->page->content .= "<tr>\n";
+        $this->page->content .= "  <td valign=\"top\"><a target=\"_blank\" href=\"" . $val['image'] . "\"><img src=\"" . $val['thumb'] . "\" /></a></td>\n";
+        $this->page->content .= "  <td valign=\"top\"><a href=\"" . $val['id'] . ".php\">" . $val['name'] . "</a> - \n";
+        $short_description = truncate_string($val['description']);
+        $this->page->content .= $short_description ."</td>\n";
+        $this->page->content .= "  <td valign=\"top\" align=\"right\">\$" . $val['retail'] . "</td>\n";
+        $this->page->content .= "  <td valign=\"top\" align=\"right\">\$" . $val['price'] . "</td>\n";;
+        if ( $_SESSION['login'] == $this->account ) {
+          $this->page->content .= "</tr>\n";
+          $this->page->content .= "<tr>\n";
+          $this->page->content .= "  <td colspan=\"4\">\n";
+          $this->page->content .= "<div class=\"graybg small\">\n";
+          $this->page->content .= "[ <a href=\"index.php?id=" . $val['id'] . "&action=edit\">Edit this item</a> ]\n";
+          $this->page->content .= "[ <a href=\"index.php?id=" . $val['id'] . "&action=delete\">Delete this item</a> ]\n";
+          $this->page->content .= "</div>\n";
+          $this->page->content .= "  </td>\n";
+        }
+        $this->page->content .= "</tr>\n";
+      }
+      $this->page->content .= "</table>\n";
+      $this->page->content .= "\n";
+    } else {
+      $this->page->content .= "<p>No items found!</p>\n\n";
+    }
+    $this->page->content .= "<br />\n\n";
+    $this->page->content .= $page_links;
+    if ( $_SESSION['login'] == $this->account ) {
+      $this->page->content .= "<div class=\"graybg small\">\n";
+      $this->page->content .= "[<a href=\"index.php?action=add\">Add an item</a>]\n";
+      $this->page->content .= "</div>\n";
+    }
+    $this->page->display();
+  }
+
+  function print_item($item) {
+    if ($item['image'] != '') {
+      $this->page->content .= "<a target=\"_blank\" href=\"" . $item['image'] . "\"><img src=\"" . $item['thumb'] . "\" /></a>\n";
+    }
+    $this->page->content .= "<p>\n";
+    $this->page->content .= "Name:" . $item['name'] . "<br />\n";
+    $this->page->content .= "Catagory:" . $item['catagory'] . "<br />\n";
+    $this->page->content .= "Description:" . $item['description'] . "<br />\n";
+    $this->page->content .= "Retail:" . $item['retail'] . "<br />\n";
+    $this->page->content .= "Price:" . $item['price'] . "<br />\n";
+    $this->page->content .= "</p>\n";
+    if ( $_SESSION['login'] == $this->account ) {
+      $this->page->content .= "<div class=\"left\">\n";
+      $this->page->content .= "[ <a href=\"index.php?id=" . $item['id'] . "&action=edit\">Edit this item</a> ]\n";
+      $this->page->content .= "[ <a href=\"index.php?id=" . $item['id'] . "&action=delete\">Delete this item</a> ]\n";
+      $this->page->content .= "</div>\n";
+    }
+    $this->page->display();
+  }
+
+  function print_item_form($item) {
+    if ( $_SESSION['login'] != $this->account ) { redirect('./'.$_GET['id']); }
+    if ( !$item['inRetail'] || $item['inRetail']=='' ) { $item['inRetail'] = '0.00'; }
+    if ( !$item['inPrice']  || $item['inPrice']=='' )  { $item['inPrice']  = '0.00'; }
+    if ($this->error_string) { $this->page->content .= "<p class=\"error\">" . $this->error_string . "</p>\n"; }
+    require_once('Form.class');
+    $form = new Form('index.php','post');
+    $form->hidden('action',$item['action']);
+    $form->hidden('inId',$item['inId']);
+    $form->hidden('inOldImage',$item['inOldImage']);
+    $form->hidden('inOldThumb',$item['inOldThumb']);
+    $form->text('Name','inName',$item['inName'],60,255);
+    $form->text('Catagory','inCatagory',$item['inCatagory'],60,40);
+    $form->file('Image','inImage',$item['inImage'],60,255);
+    $form->textarea('Description','inDescription',$item['inDescription'],10,80);
+    $form->text('Retail','inRetail',$item['inRetail'],60,10);
+    $form->text('Price','inPrice',$item['inPrice'],60,10);
+    $form->submit('submit',ucwords($item['action']));
+    $form->submit('submit','Cancel');
+    $this->page->content .= $form->render();
+    $this->page->display();
+  }
+
+  function print_delete_confirmation($item) {
+    $this->page->title       = "Confirm Deletion";
+    $this->page->description = "Please confirm the deletion.";
+    $this->page->content .= "<p class=\"error\">\n";
+    $this->page->content .= "<b>Warning!</b> You are about to delete the item named:<br /><br />\n";
+    $this->page->content .= "\"" . $item['name'] . "\"<br /><br />\n";
+    $this->page->content .= "Click 'Delete' again if you are sure.\n";
+    $this->page->content .= "</p>\n";
+    require_once('Form.class');
+    $form = new Form('index.php','post');
+    $form->hidden('action','delete');
+    $form->hidden('inId',$item['id']);
+    $form->submit('submit','Delete');
+    $form->submit('submit','Cancel');
+    $this->page->content .= $form->render();
+    $this->page->display();
+  }
+
+  function thumbnail($image,$dst_width='100') {
+    do {
+      $seed = substr(md5(microtime().posix_getpid()), 0, 8);
+      $thumbfile = $this->thumbdir . '/' . $seed . '-small.jpg';
+      $imagefile = $this->thumbdir . '/' . $seed . '-large.jpg';
+    } while ( file_exists($thumbfile) );
+    copy($image,$imagefile);
+    list($src_width, $src_height, $src_type, $src_attr) = getimagesize($imagefile);
+    $dst_height = ( $dst_width / $src_width ) * $src_height;
+    $src = imagecreatefromjpeg($imagefile);
+    $dst = imagecreatetruecolor($dst_width,$dst_height);
+    imagecopyresampled($dst, $src, 0, 0, 0, 0, $dst_width, $dst_height, $src_width, $src_height);
+    imagejpeg($dst, $thumbfile, 75);
+    imagedestroy($dst);
+    chmod($imagefile, 0606);
+    chmod($thumbfile, 0606);
+    return array($imagefile,$thumbfile);
+  }
+
+  function run() {
+
+    if ( $_SERVER["REQUEST_METHOD"] == 'POST' ) {
+
+      if ( $_POST['submit'] == 'Cancel' )  { redirect('./'.$_POST['inId']); }
+
+      if ( $_SESSION['login'] != $this->account ) { redirect('./'.$_POST['inId']); }
+
+      if ( $_POST['action'] == 'delete' && ereg("^[0-9]{6}$",$_POST['inId']) ) {
+
+        $p = $this->db->get_record_by_id($_POST['inId']);
+        if ( $this->db->delete_record_by_id($_POST['inId']) ) {
+          unlink($p['image']);
+          unlink($p['thumb']);
+          redirect('./');
+        } else {
+          $this->page->title   = "An Error Occurred!";
+          $this->page->title   = "An error occurred when trying to delete an item.";
+          $this->page->content = "Unable to delete item!";
+          $this->page->display();
+        }
+
+      } elseif ( $_POST['action'] == 'edit' || $_POST['action'] == 'add' ) {
+
+        if ( $_FILES['inImage']['type'] == 'image/jpeg' ) {
+          list($imagefile, $thumbfile) = $this->thumbnail($_FILES['inImage']['tmp_name']);
+        }
+
+        if ( $_POST['inName'] && $_POST['inCatagory'] ) {
+
+          $this->db->set_attribute('id', $_POST['inId']);
+          $this->db->set_attribute('name', $_POST['inName']);
+          $this->db->set_attribute('catagory', $_POST['inCatagory']);
+          if ($imagefile && $thumbfile) {
+            if ( $_POST['inOldImage'] ) { unlink($_POST['inOldImage']); }
+            if ( $_POST['inOldThumb'] ) { unlink($_POST['inOldThumb']); }
+            $this->db->set_attribute('image', $imagefile);
+            $this->db->set_attribute('thumb', $thumbfile);
+          } else {
+            $this->db->set_attribute('image', $_POST['inOldImage']);
+            $this->db->set_attribute('thumb', $_POST['inOldThumb']);
+          }
+          $this->db->set_attribute('description', $_POST['inDescription']);
+          $this->db->set_attribute('retail', $_POST['inRetail']);
+          $this->db->set_attribute('price', $_POST['inPrice']);
+          if ( $this->db->save() ) {
+            redirect('./'.$_POST['inId']);
+          } else {
+            $this->page->title   = "An Error Occurred!";
+            $this->page->title   = "An error occurred when trying to save an item.";
+            $this->page->content = "Unable to save item!";
+            $this->page->display();
+          }
+  
+        } else {
+
+          $this->page->title       = "Edit this item";
+          $this->page->description = "Please edit this item.";
+          $this->page->menu = array();
+          $this->page->relfile = $this->page->reluri . $_POST['inId'];
+          $this->error_string = "You must provide input for each field!\n";
+          $this->print_item_form($_POST);
+
+        }
+
+      }
+
+    } elseif ( $_GET['action'] == 'delete' && ereg("^[0-9]{6}$",$_GET['id']) ) {
+
+      if ( $_SESSION['login'] != $this->account ) { redirect('./'.$_GET['id']); }
+
+      $this->page->menu = array();
+      $this->page->relfile = $this->page->reluri . $_GET['id'];
+      $item = $this->db->get_record_by_id($_GET['id']);
+      $this->print_delete_confirmation($item);
+
+    } elseif ( $_GET['action'] == 'add' || $_GET['action'] == 'edit' ) {
+
+      if ( $_SESSION['login'] != $this->account ) { redirect('./'.$_GET['id']); }
+
+      if ( $_GET['action'] == 'add' ) {
+        $page_title       = "Add an item";
+        $page_description = "Please add an item.";
+      } else {
+        $page_title       = "Edit this item";
+        $page_description = "Please edit this item.";
+      }
+      $p = array();
+      if ($_GET['id']) {
+        list($p['inId'], $p['inName'], $p['inCatagory'], $p['inOldImage'], $p['inOldThumb'], $p['inDescription'], $p['inRetail'], $p['inPrice']) = array_values($this->db->get_record_by_id($_GET['id']));
+      }
+      $p['action'] = $_GET['action'];
+      $this->page->menu = array();
+      if ($_GET['id']) {
+        $this->page->relfile = $this->page->reluri . $_GET['id'];
+      } else {
+        $this->page->relfile = 'index.php';
+      }
+      $this->print_item_form($p);
+
+    } elseif (!$_GET['action']) {
+
+      if (ereg("^[0-9]{6}$",$_GET['id'])) {
+
+        $this->page->relfile = $this->page->reluri . $_GET['id'];
+        $item = $this->db->get_record_by_id($_GET['id']);
+        $this->print_item($item);
+
+      } else {
+
+        if ( $_GET['page'] != "" ) {
+          $this->page->relfile = "./";
+        }
+        $this->print_items($_GET['page']);
+
+      }
+
+    } else {
+
+      $this->page->title       = "I'm really confused.";
+      $this->page->description = "Something very strange is going on...";
+      $this->page->content     = "<P>I got nothin here, Buddy... Do really you know what you are looking for?</P>\n";
+      $this->page->display();
+    }
+
+  }
+
+}
+
+?>

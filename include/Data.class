@@ -1,0 +1,221 @@
+<?
+/*
+##################################################
+#
+# $RCSfile: Data.class,v $
+# Original Author...: Anthony L. Awtrey
+# Version...........: $Revision: 1.6 $
+# Last Modified By..: $Author: aawtrey $
+# Last Modified.....: $Date: 2005/04/08 16:55:24 $
+#
+# Copyright 2005 Anthony L. Awtrey
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
+#
+*/
+
+require_once(ADODB_PATH);
+
+class Data {
+
+  var $db_type      = 'mysql';
+  var $db_host_name = DB_HOST_NAME;
+  var $db_user_name = 'awtrey_4';
+  var $db_user_pwd  = 'LpEnXRtH';
+  var $db_name      = 'awtrey_martyrsrock';
+  var $table_name;
+  var $id;
+  var $attr         = array();
+  var $db;
+
+  function Data($table_name) {
+    $this->table_name = $table_name;
+    $this->db = &ADONewConnection($this->db_type);
+    $result = $this->db->Pconnect($this->db_host_name,$this->db_user_name,$this->db_user_pwd,$this->db_name);
+  }
+
+  function debug_on() {
+    $this->db->debug = true;
+  }
+
+  function debug_off() {
+    $this->db->debug = false;
+  }
+
+  function set_attribute($attribute, $value) {
+    if ( $attribute == 'id' ) {
+      $this->id = $value;
+    } else {
+      $this->attr[$attribute] = $value;
+    }
+  }
+
+  function execute($sql) {
+    $results = $this->db->Execute($sql);
+    return $results;
+  }
+
+  function get_recordset($id='') {
+    if ( $id == '' ) {
+      $sql = "SELECT * FROM " . $this->table_name . " WHERE (id=-1)";
+    } else {
+      $sql = "SELECT * FROM " . $this->table_name . " WHERE (id=$id)";
+    }
+    $results = $this->db->Execute($sql);
+    return $results;
+  }
+  
+  function return_array($sql) {
+    global $ADODB_FETCH_MODE;
+    $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
+    $results = $this->db->Execute($sql);
+    if ($results) {
+      return $results->GetArray();
+    } else {
+      return false;
+    }
+  }
+
+  function return_assoc($sql) {
+    global $ADODB_FETCH_MODE;
+    $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
+    $results = $this->db->Execute($sql);
+    if ($results) {
+      return $results->GetAssoc();
+    } else {
+      return false;
+    }
+  }
+
+  function get_record_by_id($id) {
+    $sql = "SELECT * FROM " . $this->table_name . " WHERE (id=$id)";
+    $results = $this->return_array($sql);
+    return $results[0];
+  }
+
+  function count_records($field='',$value='') {
+    $sql = "SELECT COUNT(*) FROM " . $this->table_name;
+    if ($field != '' && $value != '') {
+      if (ereg("^[0-9]+$",$value)) {
+        $sql .= " WHERE ($field=$value)";
+      } else {
+        $sql .= " WHERE ($field='$value')";
+      }
+    }
+    $results = $this->db->Execute($sql);
+    $results = $results->GetRows();
+    return $results[0]['COUNT(*)'];
+  }
+
+  function get_record($field='',$value='') {
+    global $ADODB_FETCH_MODE;
+    $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
+    $sql = "SELECT * FROM " . $this->table_name;
+    if ($field != '' && $value != '') {
+      if (ereg("^[0-9]+$",$value)) {
+        $sql .= " WHERE ($field=$value)";
+      } else {
+        $sql .= " WHERE ($field='$value')";
+      }
+    }
+    $results = $this->return_array($sql);
+    return $results[0];
+  }
+
+  function get_records($field='',$value='',$order='') {
+    $sql = "SELECT * FROM " . $this->table_name;
+    if ($field != '' && $value != '') {
+      if (ereg("^[0-9]+$",$value)) {
+        $sql .= " WHERE ($field=$value)";
+      } else {
+        $sql .= " WHERE ($field='$value')";
+      }
+    }
+    if ($order != '') {
+      $sql .= " ORDER BY $order";
+    }
+    $results = $this->return_array($sql);
+    return $results;
+  }
+
+  function get_records_assoc($field='',$value='',$order='') {
+    $sql = "SELECT * FROM " . $this->table_name;
+    if ($field != '' && $value != '') {
+      if (ereg("^[0-9]+$",$value)) {
+        $sql .= " WHERE ($field=$value)";
+      } else {
+        $sql .= " WHERE ($field='$value')";
+      }
+    }
+    if ($order != '') {
+      $sql .= " ORDER BY $order";
+    }
+    $results = $this->return_assoc($sql);
+    return $results;
+  }
+
+  function get_records_by_year($field='',$year='') {
+    $sql  = "SELECT * FROM " . $this->table_name;
+    $sql .= " WHERE (EXTRACT(YEAR FROM $field)=$year)";
+    $sql .= " ORDER BY $field DESC";
+    $results = $this->return_array($sql);
+    return $results;
+  }
+
+  function save() {
+    if ($this->id) {
+      $rs  = $this->get_recordset($this->id);
+      $sql = $this->db->GetUpdateSQL($rs, $this->attr);
+    } else {
+      $rs  = $this->get_recordset();
+      $sql = $this->db->GetInsertSQL($rs, $this->attr);
+    }
+    if ($sql) {
+      $results = $this->db->Execute($sql);
+      return $results;
+    }
+    return true;
+  }
+
+  function delete_record_by_id($id) {
+    $sql = "DELETE FROM " . $this->table_name . " WHERE (id=$id)";
+    $result = $this->db->execute($sql);
+    if ($result) {
+      return true;
+    } else {
+      return $result;
+    }
+  }
+
+  function delete_records($field,$value) {
+    $sql = "DELETE FROM " . $this->table_name . "";
+    if ($field != '' && $value != '') {
+      if (ereg("^[0-9]+$",$value)) {
+        $sql .= " WHERE ($field=$value)";
+      } else {
+        $sql .= " WHERE ($field='$value')";
+      }
+    }
+    $result = $this->db->execute($sql);
+    if ($result) {
+      return true;
+    } else {
+      return $result;
+    }
+  }
+
+}
+
+?>

@@ -1,0 +1,6010 @@
+<hymnal>
+  <info>
+    <title>The Hymnbook</title>
+    <copyright>1955</copyright>
+    <version>1.0</version>
+    <notes>Published in 1955 by five Presbyterian-Reformed denominations. This is a standard collection of traditional hymns with a strong emphasis on Psalter selections and Psalm paraphrases. Permission was granted to use these titles and indexes by: Robin Howell Rights Manager Westminster John Knox Press and Presbyterian Publishing Corporation 100 Witherspoon St. Louisville, KY 40202-139 502-569-5067</notes>
+  </info>
+  <hymns>
+    <hymn name="1">
+      <number>1</number>
+      <title>Praise ye the Lord, the Almighty, the King of creation</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 103:1; Romans 8:28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="2">
+      <number>2</number>
+      <title>For the beauty of the earth</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ecclesiastes 3:11; James 1:17; Psalms 33:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="3">
+      <number>3</number>
+      <title>Praise the Lord: ye heavens, adore Him</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 145; Revelation 7:11-12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="4">
+      <number>4</number>
+      <title>Praise the Lord, His glories show</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 5:19-20; Psalms 145:10-12; Psalms 148:13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="5">
+      <number>5</number>
+      <title>O Lord, Thou art my God and King</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 14:15-17; II Corinthians 10:5; Mark 7:37; Psalms 100; Psalms 145:3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="6">
+      <number>6</number>
+      <title>Heaven and earth, and sea and air</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 19</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="7">
+      <number>7</number>
+      <title>Of the Father's love begotten</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 2:7; Revelation 21:6; Revelation 22:13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="8">
+      <number>8</number>
+      <title>Bless, O my soul! the living God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 3:16; Psalms 103</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="9">
+      <number>9</number>
+      <title>Now thank we all our God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 2:7; Philippians 4:6-7; Psalms 100:4; Psalms 107:1; Psalms 107:31; Psalms 107:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="10">
+      <number>10</number>
+      <title>Mighty God, while angels bless Thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Chronicles 29:11; II Corinthians 9:15; I Timothy 1:16-17; Psalms 117; Psalms 136</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="11">
+      <number>11</number>
+      <title>Holy, Holy, Holy!. Lord God Almighty</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 57:15; Isaiah 6:3; Revelation 4:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="12">
+      <number>12</number>
+      <title>Lord of health, Thou life within us</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Timothy 6:17; Psalms 36:27</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="13">
+      <number>13</number>
+      <title>God Himself is with us</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Habakkuk 2:20; Matthew 1:23; Psalms 95:6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="14">
+      <number>14</number>
+      <title>Lord of the worlds above</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 10:25; Psalms 84</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="15">
+      <number>15</number>
+      <title>Sing praise to God who reigns above</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Philippians 4:19-20; Psalms 121:3-8; Psalms 91</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="16">
+      <number>16</number>
+      <title>We come unto our fathers' God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 2:39; Deuteronomy 6:6-7; I Kings 8:57</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="17">
+      <number>17</number>
+      <title>We praise Thee, o God, our Redeemer, Creator</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 13:5; Psalms 48:14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="18">
+      <number>18</number>
+      <title>We gather together to ask the Lord's blessing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 12:7; Psalms 5:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="19">
+      <number>19</number>
+      <title>Praise God, ye servants of the Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>James 5:13; Psalms 113</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="20">
+      <number>20</number>
+      <title>It is good to sing Thy praises</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 3:20-21; Psalms 92</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="21">
+      <number>21</number>
+      <title>Joyful, joyful, we adore Thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Thessalonians 5:16-18; Job 38:7; Psalms 32:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="22">
+      <number>22</number>
+      <title>Let all the world in every corner sing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 17:24-27; Psalms 67; Psalms 95:4-5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="23">
+      <number>23</number>
+      <title>All nature's works His praise declare</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Timothy 4:4; Psalms 24:1; Psalms 96:11-12; Romans 3:19-22</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="24">
+      <number>24</number>
+      <title>All people that on earth do dwell</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 5:45; Psalms 100</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="25">
+      <number>25</number>
+      <title>We worship Thee, almighty Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 2:2-3; Matthew 24:14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="26">
+      <number>26</number>
+      <title>O worship the King all glorious above</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 104:24; Psalms 145:10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="27">
+      <number>27</number>
+      <title>Ye servants of God, your Master proclaim</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 145:11-13; Revelation 7:10-12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="28">
+      <number>28</number>
+      <title>Let us with a gladsome mind</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 136</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="29">
+      <number>29</number>
+      <title>O come and sing unto the Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 95</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="30">
+      <number>30</number>
+      <title>Angel voices, ever singing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 104:31; Psalms 50:23; Romans 12:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="31">
+      <number>31</number>
+      <title>Praise, my soul, the King of heaven</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 3:16; Psalms 103:1; Psalms 148:2; Psalms 72:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="32">
+      <number>32</number>
+      <title>What shall I render to the Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 116</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="33">
+      <number>33</number>
+      <title>From all that dwell below the skies</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 117</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="34">
+      <number>34</number>
+      <title>Ye watchers and ye holy ones</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 22:19-26</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="35">
+      <number>35</number>
+      <title>All ye that fear God's holy name</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 99:1; Revelation 5:11-13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="36">
+      <number>36</number>
+      <title>Praise ye the Lord, for it is good</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 147</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="37">
+      <number>37</number>
+      <title>O sing a new song to the Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 40:3; Psalms 96; Revelation 14:3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="38">
+      <number>38</number>
+      <title>The earth, with all that dwell therein</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="39">
+      <number>39</number>
+      <title>Come, ye people, rise and sing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 13:15; Psalms 148:13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="40">
+      <number>40</number>
+      <title>Open now thy gates of beauty</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="41">
+      <number>41</number>
+      <title>When morning gilds the skies</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Malachi 1:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="42">
+      <number>42</number>
+      <title>As the sun doth daily rise</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 4:6; Psalms 59:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="43">
+      <number>43</number>
+      <title>Father, we praise Thee, now the night is over</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Proverbs 8:34; Psalms 63:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="44">
+      <number>44</number>
+      <title>Come, my soul, thou must be waking</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 139:23-24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="45">
+      <number>45</number>
+      <title>New every morning is the love</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Lamentations 3:22-23; Psalms 4:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="46">
+      <number>46</number>
+      <title>O Splendor of God's glory bright</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 58:8; John 1:9; Luke 1:78-79</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="47">
+      <number>47</number>
+      <title>Christ, whose glory fills the skies</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Peter 1:19; John 8:12; Psalms 27:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="48">
+      <number>48</number>
+      <title>Hear my words, O gracious Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 5:1-7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="49">
+      <number>49</number>
+      <title>When morning lights the eastern skies</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 143:8-12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="50">
+      <number>50</number>
+      <title>Awake, my soul and with the sun</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 9:4; Psalms 108:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="51">
+      <number>51</number>
+      <title>Now the day is over</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 42:8; Psalms 4:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="52">
+      <number>52</number>
+      <title>On the good and faithful</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="53">
+      <number>53</number>
+      <title>Now God be with us, for the night is closing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 58:8; Psalms 139:12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="54">
+      <number>54</number>
+      <title>Saviour, breathe an evening blessing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 91:11-12; Psalms 91:5-6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="55">
+      <number>55</number>
+      <title>At even, when the sun was set</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 53:5-6; Mark 1:32-34</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="56">
+      <number>56</number>
+      <title>Sun of my soul, Thou Saviour dear</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Genesis 28:11; Psalms 3:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="57">
+      <number>57</number>
+      <title>Before the day draws near its ending</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 141:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="58">
+      <number>58</number>
+      <title>God, that madest earth and heaven</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 11:9-10; Psalms 73:24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="59">
+      <number>59</number>
+      <title>The day Thou gavest, Lord, is ended</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Malachi 1:11; Psalms 72:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="60">
+      <number>60</number>
+      <title>Softly now the light of day</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 26:9; Psalms 63:6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="61">
+      <number>61</number>
+      <title>O gladsome light, O grace of God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 60:1-2; I Timothy 6:16; Zechaniah 14:7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="62">
+      <number>62</number>
+      <title>Again, as evening's shadow falls</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 92:1-2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="63">
+      <number>63</number>
+      <title>All praise to Thee, my God, this night</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Jeremiah 31:26; Psalms 113:3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="64">
+      <number>64</number>
+      <title>Abide with me: fast falls the eventide</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 24:29; Psalms 102:26-27</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="65">
+      <number>65</number>
+      <title>Day is dying in the west</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 6:3; Psalms 69:34</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="66">
+      <number>66</number>
+      <title>Now woods and wolds are sleeping</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 116:7; Psalms 121:3-4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="67">
+      <number>67</number>
+      <title>Now, on land and sea descending</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Genesis 1:16; I Peter 5:7; Psalms 19:1-2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="68">
+      <number>68</number>
+      <title>When in the night I meditate</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="69">
+      <number>69</number>
+      <title>This is the day the Lord hath made</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 118:24; Revelation 1:10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="70">
+      <number>70</number>
+      <title>O day of rest and gladness</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Genesis 1:3; Isaiah 58:13-14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="71">
+      <number>71</number>
+      <title>The glorious gates of righteousness</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 118</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="72">
+      <number>72</number>
+      <title>This is the day of light</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 14:27; Luke 1:78; Mark 2:27-28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="73">
+      <number>73</number>
+      <title>Light of light, enlighten me</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Malachi 4:2; Psalms 27:4; Psalms 4:7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="74">
+      <number>74</number>
+      <title>Safely through another week</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Leviticus 19:30; Psalms 62:5; Romans 5:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="75">
+      <number>75</number>
+      <title>Praise our Father for this Sunday</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Micah 7:18; Philippians 4:19</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="76">
+      <number>76</number>
+      <title>May the grace of Christ our Saviour</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 18:14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="77">
+      <number>77</number>
+      <title>Saviour, again to Thy dear name we raise</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 14:27; Philippians 4:7; Psalms 139:12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="78">
+      <number>78</number>
+      <title>God be with you till we meet again</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Deuteronomy 33:27; Genesis 31:49; Psalms 32:7-8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="79">
+      <number>79</number>
+      <title>Lord, dismiss us with Thy blessing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 20:32; John 20:1; Luke 2:29</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="80">
+      <number>80</number>
+      <title>On our way rejoicing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 84:4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="81">
+      <number>81</number>
+      <title>Before Jehovah's awful throne</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 100</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="82">
+      <number>82</number>
+      <title>Thy mercy and Thy truth, O Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 36:5-10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="83">
+      <number>83</number>
+      <title>The Lord is King! lift up thy voice</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 97:1; Revelation 19:6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="84">
+      <number>84</number>
+      <title>I sing the mighty power of God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 104:13-24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="85">
+      <number>85</number>
+      <title>Immortal, invisible, God only wise</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 40:28; I Timothy 1:17; Psalms 90:1-4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="86">
+      <number>86</number>
+      <title>Begin, my tongue, some heavenly theme</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Exodus 34:6; Psalms 147:3-5; Psalms 89:1-2; Psalms 89:5; Psalms 89:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="87">
+      <number>87</number>
+      <title>Lord of all being, throned afar</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Exodus 24:10; Isaiah 6:1; Isaiah 6:3; Revelation 21:10-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="88">
+      <number>88</number>
+      <title>Lord, Thou hast been our dwelling place</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 90</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="89">
+      <number>89</number>
+      <title>The God of Abraham praise</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Exodus 3:15; Hebrews 11:17-19; Malachi 3:6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="90">
+      <number>90</number>
+      <title>God, the Lord, a King remaineth</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 93</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="91">
+      <number>91</number>
+      <title>A mighty Fortress is our God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 6:10-17; Psalms 46:1-2; Romans 8:38-39</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="92">
+      <number>92</number>
+      <title>O God, the Rock of Ages</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 90</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="93">
+      <number>93</number>
+      <title>O God, Thou art the Father</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 103:19; Revelation 4:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="94">
+      <number>94</number>
+      <title>The Lord Almighty reigns</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 93</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="95">
+      <number>95</number>
+      <title>O Lord, our Lord, in all the earth</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="96">
+      <number>96</number>
+      <title>All beautiful the march of days</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Proverbs 8:30-31; Song of Solomon 2:11-12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="97">
+      <number>97</number>
+      <title>The spacious firmament on high</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 19:1-6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="98">
+      <number>98</number>
+      <title>Praise ye, praise ye the Lord 98</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 148</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="99">
+      <number>99</number>
+      <title>Thy might sets fast the mountains</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 65</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="100">
+      <number>100</number>
+      <title>All creatures of our God and King</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Job 12:7-10; Psalms 148:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="101">
+      <number>101</number>
+      <title>This is my Father's world</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 5:45; Psalms 104:24; Psalms 24:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="102">
+      <number>102</number>
+      <title>God, who touchest earth with beauty</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Daniel 12:3; Psalms 112:4; Psalms 90:17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="103">
+      <number>103</number>
+      <title>God is Love, His mercy brightens</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I John 4:8; Proverbs 4:18; Psalms 103:17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="104">
+      <number>104</number>
+      <title>The Lord's my Shepherd, I'll not want</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 10:14; Psalms 23</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="105">
+      <number>105</number>
+      <title>How gentle God's commands</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 5:7; Psalms 55:22</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="106">
+      <number>106</number>
+      <title>The King of love my Shepherd is</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 23</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="107">
+      <number>107</number>
+      <title>Father, long before creation</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 3:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="108">
+      <number>108</number>
+      <title>God of our life, through all the circling years</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Daniel 5:23; II Timothy 1:12; Psalms 31:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="109">
+      <number>109</number>
+      <title>I bow my forehead to the dust</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 30:15; Job 42:5-6; Psalms 139:9-10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="110">
+      <number>110</number>
+      <title>There's a wideness in God's mercy</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hosea 14:4; Micah 7:18; Psalms 103:12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="111">
+      <number>111</number>
+      <title>O God, our Help in ages past</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 90</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="112">
+      <number>112</number>
+      <title>God moves in a mysterious way</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 77:19-20; Psalms 97:2; Romans 11:33</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="113">
+      <number>113</number>
+      <title>My soul with expectation doth</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 62:1-8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="114">
+      <number>114</number>
+      <title>I look to Thee in every need</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 61:3; Matthew 5:4; Psalms 30:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="115">
+      <number>115</number>
+      <title>Praise the Lord, for He is good</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 107; Psalms 118:l</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="116">
+      <number>116</number>
+      <title>O Love divine, that stooped to share</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 8:17; Psalms 145:18; Romans 14:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="117">
+      <number>117</number>
+      <title>By all whom Thou hast made</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 86</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="118">
+      <number>118</number>
+      <title>O Love of God most full</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Jeremiah 31:3; Romans 5:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="119">
+      <number>119</number>
+      <title>When all Thy mercies, O my God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 139:17-18; Psalms 68:19; Psalms 89:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="120">
+      <number>120</number>
+      <title>Behold the amazing gift of love</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I John 3:1-3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="121">
+      <number>121</number>
+      <title>O thou my soul, bless God the Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 103</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="122">
+      <number>122</number>
+      <title>God of compassion, in mercy befriend us</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Deuteronomy 33:25; II Corinthians 12:9; Psalms 103:13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="123">
+      <number>123</number>
+      <title>Call Jehovah thy Salvation</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 91</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="124">
+      <number>124</number>
+      <title>Be not dismayed whate're betide</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 5:7; Philippians 4:6-7; Psalms 55:22</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="125">
+      <number>125</number>
+      <title>Come, let us to the Lord our God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hosea 6:1-3; Psalms 30:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="126">
+      <number>126</number>
+      <title>In sweet communion, Lord, with Thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 73:1; Psalms 73:23-28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="127">
+      <number>127</number>
+      <title>O Lord, by Thee delivered</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 30</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="128">
+      <number>128</number>
+      <title>Our God, to whom we turn</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 45:22; John 14:6; Romans 14:l7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="129">
+      <number>129</number>
+      <title>O Lord my inmost heart and thought</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 139</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="130">
+      <number>130</number>
+      <title>How sweet the name of Jesus sounds</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 4:12; Philippians 2:9; Psalms 72:10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="131">
+      <number>131</number>
+      <title>Come, Christians, join to sing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 110:1; Revelation 19:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="132">
+      <number>132</number>
+      <title>All hail the power of Jesus' name</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 9:6; Philippians 2:9-11; Revelation 19:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="133">
+      <number>133</number>
+      <title>Look, ye saints, the sight is glorious</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 2:9; Isaiah 53:11; Revelation 5:12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="134">
+      <number>134</number>
+      <title>O could I speak the matchless worth</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 3:8; I Peter 2:24; I Peter 2:25</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="135">
+      <number>135</number>
+      <title>Fairest Lord Jesus</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 45:2; Zechaniah 9:17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="136">
+      <number>136</number>
+      <title>Christ is the world's redeemer</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>1 John 2:2; Hebrews 12:1; Mark 14:62</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="137">
+      <number>137</number>
+      <title>Blessing and honor and glory and power</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 3:20-21; Revelation 5:11-13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="138">
+      <number>138</number>
+      <title>Light of the world, we hail Thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>1 John 1:5; II Corinthians 3:18; John 9:4-5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="139">
+      <number>139</number>
+      <title>Blessed assurance, Jesus is mine</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 5:1; I John 3:2; I Peter 1:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="140">
+      <number>140</number>
+      <title>Rejoice, the Lord is King</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 5:31; I Corinthians 15:25; Revelation 19:6-7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="141">
+      <number>141</number>
+      <title>O for a thousand tongues to sing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 4:18; Matthew 1:21; Revelation 1:5-6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="142">
+      <number>142</number>
+      <title>Majestic sweetness sits enthroned</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 6:20; Psalms 46:2; Psalms 46:7; Song of Solomon 5:10; Song of Solomon 5:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="143">
+      <number>143</number>
+      <title>At the name of Jesus</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 2:15; Habakkuk 2:20; Philippians 2:10; Romans 6:4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="144">
+      <number>144</number>
+      <title>I greet Thee; who my sure Redeemer art</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 1:27; Ephesians 1:3; Ephesians 1:7; Isaiah 35:10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="145">
+      <number>145</number>
+      <title>O light, whose beams illumine all</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I John 4:I8; John 8:12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="146">
+      <number>146</number>
+      <title>Hail to the Lord's Anointed</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 72</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="147">
+      <number>147</number>
+      <title>O come, O come, Emmanuel</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 11:6-9; Matthew 1:23</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="148">
+      <number>148</number>
+      <title>Let all mortal flesh keep silence</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Galatians 4:4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="149">
+      <number>149</number>
+      <title>Watchman, tell us of the night</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 21:11; Luke 2:10-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="150">
+      <number>150</number>
+      <title>Hark, what a sound, and too divine for hearing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 3:11; Revelation 22:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="151">
+      <number>151</number>
+      <title>Come, Thou long-expected Jesus</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Haggai 2:l; Luke 1:74-79; Revelation 3:21</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="152">
+      <number>152</number>
+      <title>Lift up your heads, ye mighty gates</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="153">
+      <number>153</number>
+      <title>The race that long in darkness pined</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 9:6-7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="154">
+      <number>154</number>
+      <title>Silent night! holy night</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 1:14; Luke 2:13-14; Matthew 2:1; Matthew 2:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="155">
+      <number>155</number>
+      <title>There's a song in the air</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 3:7; Luke 2:7-14; Micah 5:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="156">
+      <number>156</number>
+      <title>The first Noel the angel did say</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:8-15; Matthew 2:1-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="157">
+      <number>157</number>
+      <title>Away in a manger, no crib for His bed</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:7; Matthew 18:14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="158">
+      <number>158</number>
+      <title>Angels we have heard on high</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:8-16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="159">
+      <number>159</number>
+      <title>What Child is this, who laid to rest</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:7-14; Matthew 2:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="160">
+      <number>160</number>
+      <title>It came upon the midnight clear</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 9:6; Luke 2:13-15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="161">
+      <number>161</number>
+      <title>Joy to the world! the Lord is come</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:10-11; Psalms 98</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="162">
+      <number>162</number>
+      <title>Lo, how a rose e're blooming</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 11:1; Isaiah 11:10; Luke 2:7; Song of Solomon 2:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="163">
+      <number>163</number>
+      <title>Hark, the herald angels sing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 1:14; Luke 2:13-14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="164">
+      <number>164</number>
+      <title>Infant holy</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:10-14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="165">
+      <number>165</number>
+      <title>Good Christian men, rejoice</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:7-15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="166">
+      <number>166</number>
+      <title>God rest you merry, gentlemen</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Timothy 1:15; Luke 2:10-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="167">
+      <number>167</number>
+      <title>Gentle Mary laid her Child</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:7-14; Matthew 2:9-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="168">
+      <number>168</number>
+      <title>Angels, from the realms of glory</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:7-17; Matthew 2:1-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="169">
+      <number>169</number>
+      <title>While shepherds watched their flocks by night</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:7-17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="170">
+      <number>170</number>
+      <title>O come, all ye faithful</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 1:14; Luke 2:4-16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="171">
+      <number>171</number>
+      <title>O little town of Bethlehem</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:4; Luke 2:8-15; Micah 5:2; Zechaniah 4:6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="172">
+      <number>172</number>
+      <title>All my heart this night rejoices</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:7-17; Matthew 2:10-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="173">
+      <number>173</number>
+      <title>Ah, dearest Jesus, holy Child</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 3:17; Luke 2:10-14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="174">
+      <number>174</number>
+      <title>As with gladness men of old</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 2:1-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="175">
+      <number>175</number>
+      <title>Brightest and best of the sons of the morning</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 2:1-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="176">
+      <number>176</number>
+      <title>We three kings of orient are</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 2:2-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="177">
+      <number>177</number>
+      <title>O sing a song of Bethlehem</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:8-15; Mark 4:39; Romans 4:25</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="178">
+      <number>178</number>
+      <title>O Master Workman of the race</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:40-49; Mark 6:1-3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="179">
+      <number>179</number>
+      <title>Thine arm, O Lord, in days of old</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 4:23-24; Matthew 9:20-21</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="180">
+      <number>180</number>
+      <title>What grace, O Lord, and beauty shone</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 2:22-24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="181">
+      <number>181</number>
+      <title>Lord, who throughout these forty days</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 4:1-13; Matthew 4:1-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="182">
+      <number>182</number>
+      <title>O wondrous type, O vision fair</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 3:18; Luke 9:28-36</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="183">
+      <number>183</number>
+      <title>We would see Jesus; lo! His star is shining</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 1:8; John 1:14; John 12:21</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="184">
+      <number>184</number>
+      <title>Thou didst leave Thy throne and Thy kingly crown</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 8:9; Luke 8:58; Revelation 3:20</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="185">
+      <number>185</number>
+      <title>Hosanna, loud hosanna</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 12:19; Mark 11:1-11; Matthew 21:15-16; Matthew 21:8-9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="186">
+      <number>186</number>
+      <title>When, His salvation bringing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 19:35; Luke 19:40; Matthew 21:15-16; Matthew 21:8-9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="187">
+      <number>187</number>
+      <title>All glory, laud, and honor</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 21:1-17; Psalms 118:26</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="188">
+      <number>188</number>
+      <title>Ride on! ride on in majesty</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 21:1-11; Matthew 21:15; Psalms 24:7-10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="189">
+      <number>189</number>
+      <title>'Tis midnight; and on olive's brow</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 22:39-46; Matthew 26:36-45</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="190">
+      <number>190</number>
+      <title>Beneath the cross of Jesus</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Galatians 6:14; Isaiah 32:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="191">
+      <number>191</number>
+      <title>Ah, holy Jesus, how hast Thou offended</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 5:21; I Peter 3:18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="192">
+      <number>192</number>
+      <title>O come and mourn with me awhile</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 16:20; Psalms 51:17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="193">
+      <number>193</number>
+      <title>Go to dark Gethsemane</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 2:21; Matthew 16:24; Philippians 3:10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="194">
+      <number>194</number>
+      <title>O sacred Head, now wounded</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 53:5; Isaiah 53:5; John 19:1-5; Revelation 5:12; Revelation 5:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="195">
+      <number>195</number>
+      <title>In the cross of Christ I glory</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Galatians 6:14; I Corinthians 2:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="196">
+      <number>196</number>
+      <title>Cross of Jesus, cross of sorrow</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 9:14; Hebrews 9:22; Philippians 2:6-8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="197">
+      <number>197</number>
+      <title>Throned upon the awful tree</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 53:10; Mark 15:34</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="198">
+      <number>198</number>
+      <title>When I survey the wondrous cross</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Galatians 2:20; Galatians 6:14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="199">
+      <number>199</number>
+      <title>Alas! and did my Saviour bleed</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Genesis 32:10; Romans 5:8-10; Romans 6:13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="200">
+      <number>200</number>
+      <title>O Jesus, we adore Thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 4:12; I Corinthians 15:57; Matthew 27:41-43; Philippians 3:9-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="201">
+      <number>201</number>
+      <title>Were you there when they crucified my Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 23:55; Matthew 27:55-56</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="202">
+      <number>202</number>
+      <title>There is a green hill far away</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 13:12; Isaiah 53:6; I Timothy 1:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="203">
+      <number>203</number>
+      <title>The strife is o'er, the battle done</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 15:20; I Corinthians 15:57; II Timothy 1:10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="204">
+      <number>204</number>
+      <title>Jesus Christ is risen today</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 15:3-4; I Corinthians 15:55-57; Mark 16:1-8; Matthew 28:1-9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="205">
+      <number>205</number>
+      <title>Come, ye faithful, raise the strain</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 20:20; Matthew 28:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="206">
+      <number>206</number>
+      <title>O sons and daughters, let us sing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 20:28-29; Matthew 28:1; Matthew 28:7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="207">
+      <number>207</number>
+      <title>"Welcome, happy morning!" age to age shall say</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 25:8; Revelation 1:18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="208">
+      <number>208</number>
+      <title>The day of resurrection</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 1:3; Matthew 28:9; Romans 6:23; Romans 6:4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="209">
+      <number>209</number>
+      <title>Thine is the glory</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 3:4; Matthew 28:2; Matthew 28:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="210">
+      <number>210</number>
+      <title>Hail, Thou once despised Jesus</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 19:2-5; Revelation 5:12-13; Romans 8:34</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="211">
+      <number>211</number>
+      <title>The Head that once was crowned with thorns</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Mark 15:17-18; Revelation 19:12; Revelation 19:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="212">
+      <number>212</number>
+      <title>The Lord ascendeth up on high</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 1:9; Ephesians 4:8; Luke 24:50-51</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="213">
+      <number>213</number>
+      <title>Crown Him with many crowns</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 2:4; Psalms 21:3; Revelation 19:12; Revelation 19:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="214">
+      <number>214</number>
+      <title>O Holy Saviour, Friend unseen</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 15:5; Matthew 11:28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="215">
+      <number>215</number>
+      <title>Jesus, Thou Joy of loving hearts</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 1:8; John 6:35; John 6:51; Mark 14:22-24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="216">
+      <number>216</number>
+      <title>Jesus, Lover of my soul</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Galatians 2:20; John 4:14; Matthew 11:28; Psalms 23</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="217">
+      <number>217</number>
+      <title>O Son of Man, our Hero strong and tender</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 15:11-15; Mark 10:45</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="218">
+      <number>218</number>
+      <title>Since Jesus is my Friend</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 15:14; Nehemiah 8:10; Psalms 28:7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="219">
+      <number>219</number>
+      <title>O Thou, in all Thy might so far</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 17:27-28; I Corinthians 13:12; II Peter 1:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="220">
+      <number>220</number>
+      <title>I've found a Friend, O such a Friend</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Galatians 2:20; Proverbs 18:24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="221">
+      <number>221</number>
+      <title>Thou art the Way: to Thee alone</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 14:6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="222">
+      <number>222</number>
+      <title>Jesus, stand among us</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 14:16-18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="223">
+      <number>223</number>
+      <title>Jesus merciful</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 2:24; Psalms 34:18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="224">
+      <number>224</number>
+      <title>I know not how that Bethlehem's Babe</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 42:1; I Timothy 1:11-12; I Timothy 3:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="225">
+      <number>225</number>
+      <title>Jesus, kneel beside me</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 9:4-5; Luke 11:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="226">
+      <number>226</number>
+      <title>Blest are the pure in heart</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I John 3:3; Matthew 5:8; Psalms 15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="227">
+      <number>227</number>
+      <title>We bear the strain of earthly care</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 13:5; Philippians 4:19</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="228">
+      <number>228</number>
+      <title>Strong son of God, immortal Love</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 5:7; Isaiah 63:1; John 20:29</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="229">
+      <number>229</number>
+      <title>Immortal Love, forever full</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 13:8; Matthew 9:20-21; Psalms 139:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="230">
+      <number>230</number>
+      <title>The Lord will come and not be slow</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 85; Psalms 86; Psalms 87</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="231">
+      <number>231</number>
+      <title>Rejoice, rejoice, believers</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 25:1-13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="232">
+      <number>232</number>
+      <title>The King shall come when morning dawns</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Peter 1:19; Matthew 25:31; Song of Solomon 6:10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="233">
+      <number>233</number>
+      <title>Come, Lord, and tarry not</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Peter 3:8-9 233; Romans 8:21-22</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="234">
+      <number>234</number>
+      <title>Lo He comes, with clouds descending</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Mark 14:62; Revelation 11:15; Revelation 1:7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="235">
+      <number>235</number>
+      <title>Breathe on me, Breath of God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 2:2; Ezekiel 36:27; Joel 2:28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="236">
+      <number>236</number>
+      <title>Spirit of God, descend upon my heart</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Galatians 5:22-23; Luke 11:13; Psalms 51:11-12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="237">
+      <number>237</number>
+      <title>Come, Holy Ghost, our souls inspire</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 3:16; Romans 5:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="238">
+      <number>238</number>
+      <title>Seal us, O Holy Spirit</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 1:13; Ezekiel 36:27</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="239">
+      <number>239</number>
+      <title>Come, Holy Spirit, heavenly Dove</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I John 4:I9; Matthew 3:16; Romans 5:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="240">
+      <number>240</number>
+      <title>Holy Spirit, Truth divine</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 16:l3; Luke 11:13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="241">
+      <number>241</number>
+      <title>Gracious spirit, dwell with me</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 14:16-17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="242">
+      <number>242</number>
+      <title>O spirit of the living God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 1:8; Acts 2:1-4; Revelation 14:6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="243">
+      <number>243</number>
+      <title>Spirit divine, attend our prayers</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 3:16; Ezekiel 36:26; Psalms 51:10-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="244">
+      <number>244</number>
+      <title>Come; Thou Almighty King</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Romans 8:15-16; Zechaniah 4:6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="245">
+      <number>245</number>
+      <title>O Trinity of blessed light</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 3:21; I Timothy 1:17; Jude 1:25</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="246">
+      <number>246</number>
+      <title>Ancient of Days, who sittest throned in glory</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Daniel 7:9; I John 5:6; Isaiah 9:6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="247">
+      <number>247</number>
+      <title>O God of Light, The Word, a lamp unfailing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Peter 1:19; Psalms 119:105</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="248">
+      <number>248</number>
+      <title>Book of books, our people's strength</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 1:1-3; Romans 15:4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="249">
+      <number>249</number>
+      <title>Father of mercies, in Thy Word</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 1:25; John 17:17; John 17:19; Mark 13:31</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="250">
+      <number>250</number>
+      <title>Break Thou the bread of life</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 6:35; John 8:31-32</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="251">
+      <number>251</number>
+      <title>O Word of God Incarnate</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Timothy 3:15-17; Luke 24:27; Psalms 119:105; Psalms 119:130</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="252">
+      <number>252</number>
+      <title>Lord, Thy word abideth</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Peter 1:4; Joshua 1:8; Psalms 119:54</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="253">
+      <number>253</number>
+      <title>How I love Thy law, O Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 119</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="254">
+      <number>254</number>
+      <title>Lamp of our feet, whereby we trace</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 1:23; James 1:21; Psalms 119:105; Psalms 119:130</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="255">
+      <number>255</number>
+      <title>O come, my people, to my law</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 78:1-8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="256">
+      <number>256</number>
+      <title>O Lord, of life, to Thee we lift</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 40:8; Matthew 5:14-16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="257">
+      <number>257</number>
+      <title>Most perfect is the law of God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 19:7-14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="258">
+      <number>258</number>
+      <title>How shall the young direct their way</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 119; Psalms 37:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="259">
+      <number>259</number>
+      <title>The heavens declare Thy glory, Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 19; Psalms 86:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="260">
+      <number>260</number>
+      <title>The Spirit breathes upon the Word</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 119:103; Psalms 119:24; Psalms 119:97; Psalms 19:7-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="261">
+      <number>261</number>
+      <title>Come to the Saviour now</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 6:35; Psalms 34:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="262">
+      <number>262</number>
+      <title>Thy life was given for me</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 9:15; John 15:13; Romans 6:23</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="263">
+      <number>263</number>
+      <title>Hark, my soul, it is the Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 3:18-19; Isaiah 49:15; John 21:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="264">
+      <number>264</number>
+      <title>Art thou weary, art thou languid</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 14:27; Matthew 11:28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="265">
+      <number>265</number>
+      <title>Sing them over again to me</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 6:68</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="266">
+      <number>266</number>
+      <title>O Jesus, Thou art standard</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Revelation 3:20</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="267">
+      <number>267</number>
+      <title>Jesus is tenderly calling thee home</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Mark 10:49; Mark 2:14; Matthew 4:18-21</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="268">
+      <number>268</number>
+      <title>"Come unto Me, ye weary"</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Timothy 1:15; Luke 15:2; Matthew 11:28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="269">
+      <number>269</number>
+      <title>Jesus calls us: o'er the tumult</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 4:19; Romans 12:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="270">
+      <number>270</number>
+      <title>Lord Jesus, think on me</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 13:5; Hebrews 7:25; Luke 23:42</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="271">
+      <number>271</number>
+      <title>Rock of Ages, cleft for me</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 10:4; Psalms 27:5; Psalms 71:3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="272">
+      <number>272</number>
+      <title>Just as I am, without one plea</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 1:36; John 1:46; Revelation 22:17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="273">
+      <number>273</number>
+      <title>Depth of mercy! can there be</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 1:18; Luke 19:10; Psalms 51:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="274">
+      <number>274</number>
+      <title>Because I knew not when my life was good</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 18:13; Revelation 3:9; Romans 3:23</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="275">
+      <number>275</number>
+      <title>Amazing grace, how sweet the sound</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 2:8; Exodus 34:6; Psalms 103:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="276">
+      <number>276</number>
+      <title>There is a fountain filled with blood</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 9:14; I Peter 1:19; Zechaniah 13:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="277">
+      <number>277</number>
+      <title>Lord, from the depths to Thee I cried</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 130</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="278">
+      <number>278</number>
+      <title>I am coming to the cross</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 5:14-15; Psalms 40:17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="279">
+      <number>279</number>
+      <title>Jesus, I my cross have taken</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 4:17; James 2:5; Mark 10:21</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="280">
+      <number>280</number>
+      <title>I heard the voice of Jesus say</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 4:14; John 8:12; Matthew 11:28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="281">
+      <number>281</number>
+      <title>How blest is he whose trespass</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 32</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="282">
+      <number>282</number>
+      <title>God be merciful to me</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 18:13; Psalms 51</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="283">
+      <number>283</number>
+      <title>Go, labor on: spend, and be spent</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 12:15; John 9:5; Matthew 21:28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="284">
+      <number>284</number>
+      <title>Draw Thou my soul, O Christ</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 10:5; II Corinthians 5:14; Matthew 6:10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="285">
+      <number>285</number>
+      <title>Father, we greet Thee, God of Love, whose glory</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 1:3; John 15:15; Psalms 43:3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="286">
+      <number>286</number>
+      <title>I bind my heart this tide</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 27:23; Matthew 25:40; Romans 12:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="287">
+      <number>287</number>
+      <title>Come, labor on</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 5:16; I Corinthians 15:58; John 4:34-35</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="288">
+      <number>288</number>
+      <title>Lord God of Hosts, whose purpose, never swerving</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 4:3-6; Ephesians 6:10; Psalms 139:17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="289">
+      <number>289</number>
+      <title>So let our lips and lives express</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 3:17; Ephesians 4:1-2; Titus 2:12-13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="290">
+      <number>290</number>
+      <title>Must Jesus bear the cross alone</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Timothy 2:12; Luke 9:23; Revelation 2:10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="291">
+      <number>291</number>
+      <title>Hope of the world, Thou Christ of great compassion</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 6:35; John 8:12; Romans 15:13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="292">
+      <number>292</number>
+      <title>I'm not ashamed to own my Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Timothy 1:12; Romans 1:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="293">
+      <number>293</number>
+      <title>"Take up thy cross," the Saviour said</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 14:27; Matthew 16:24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="294">
+      <number>294</number>
+      <title>We thank Thee, Lord, Thy paths of service lead</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 12:26; Matthew 25:40; Revelation 22:3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="295">
+      <number>295</number>
+      <title>Christ of the Upward Way</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Deuteronomy 31:6; II Corinthians 2:14; Matthew 4:19</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="296">
+      <number>296</number>
+      <title>Come, ye that fear the Lord, and hear</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 66:8-20</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="297">
+      <number>297</number>
+      <title>work, for the night is coming</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 9:4; Mark 13:34; Psalms 104:23</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="298">
+      <number>298</number>
+      <title>Lord, speak to me, that I may speak</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 50:4; Jeremiah 1:9; Philippians 2:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="299">
+      <number>299</number>
+      <title>Master, no offering</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 12:15; John 12:3; Luke 7:37-38</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="300">
+      <number>300</number>
+      <title>Take time to be holy</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 15:9; Mark 3:14; Psalms 16:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="301">
+      <number>301</number>
+      <title>A charge to keep I have</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 20:24; II Timothy 4:1-2; John 17:4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="302">
+      <number>302</number>
+      <title>Have Thine own way, Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 22:42; Psalms 139:23-24; Romans 12:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="303">
+      <number>303</number>
+      <title>Be Thou my vision, O Lord of my heart</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Philippians 3:8; Psalms 73:25</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="304">
+      <number>304</number>
+      <title>O Master, let me walk with Thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 4:1-2; Mark 10:45</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="305">
+      <number>305</number>
+      <title>O Thou who makest souls to shine</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Daniel 12:3; Isaiah 11:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="306">
+      <number>306</number>
+      <title>Take Thou our minds, dear Lord, we humbly pray</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 10:5; Philippians 4:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="307">
+      <number>307</number>
+      <title>O Jesus, I have promised</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 13:5-6; John 12:26; Luke 12:32</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="308">
+      <number>308</number>
+      <title>Make me a captive, Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 12:9-10; John 15:5; Philippians 4:13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="309">
+      <number>309</number>
+      <title>Father, whose will is life and good</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 10:38; Luke 10:34; Matthew 11:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="310">
+      <number>310</number>
+      <title>Take my life, and let it be</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Philippians 1:20-21; Romans 12:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="311">
+      <number>311</number>
+      <title>Saviour! Thy dying love</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 6:19-20; John 15:13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="312">
+      <number>312</number>
+      <title>We give Thee but Thine own</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Chronicles 29:14; I Peter 4:10; Matthew 25:40</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="313">
+      <number>313</number>
+      <title>All things are Thine; no gift have we</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 1:19; I Corinthians 4:7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="314">
+      <number>314</number>
+      <title>Christ, of all my hopes the Ground</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Philippians 1:21</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="315">
+      <number>315</number>
+      <title>From Thee all skill and science flow</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 2:3; James 3:17; Proverbs 8:32-35</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="316">
+      <number>316</number>
+      <title>More about Jesus would I know</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 1:17-19</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="317">
+      <number>317</number>
+      <title>Lord, I want to be a Christian</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I John 3:2; I Thessalonians 3:12-13; Matthew 11:29</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="318">
+      <number>318</number>
+      <title>There is a place of quiet rest</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I John 4:I8; John 10:28; Psalms 32:7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="319">
+      <number>319</number>
+      <title>O for a closer walk with God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 12:14; Psalms 139:23-24; Psalms 51:12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="320">
+      <number>320</number>
+      <title>I am Thine, O Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 10:22; Philippians 3:10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="321">
+      <number>321</number>
+      <title>My spirit longs for Thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 14:27; Psalms 63:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="322">
+      <number>322</number>
+      <title>As pants the hart for cooling streams</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 42</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="323">
+      <number>323</number>
+      <title>O let my supplicating cry</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 119</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="324">
+      <number>324</number>
+      <title>I need Thee every hour</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Exodus 33:14-15; Matthew 28:20; Psalms 40:17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="325">
+      <number>325</number>
+      <title>O for a heart to praise my God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 51:10; Psalms 51:17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="326">
+      <number>326</number>
+      <title>Nearer, my God, to Thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Genesis 28:10-22; James 4:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="327">
+      <number>327</number>
+      <title>O Lord, my God, most earnestly</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 63</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="328">
+      <number>328</number>
+      <title>Father of peace, and God of love</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 13:20-21</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="329">
+      <number>329</number>
+      <title>O God, regard my humble plea</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 61</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="330">
+      <number>330</number>
+      <title>Rise, my soul, and stretch thy wings</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 3:1; Hebrews 11:13; Isaiah 40:31</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="331">
+      <number>330</number>
+      <title>Saviour, like a shepherd lead us</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 3:1; Hebrews 11:13; Isaiah 40:31</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="332">
+      <number>331</number>
+      <title>Lead, kindly Light, amid the encircling gloom</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Samuel 22:29; Luke 1:79; Psalms 73:24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="333">
+      <number>332</number>
+      <title>Lead on, O King Eternal</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 6:10; II Timothy 4:7-8; Psalms 31:3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="334">
+      <number>333</number>
+      <title>O brothers, lift your voices</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 115:1; Psalms 27:6; Revelation 4:10-11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="335">
+      <number>334</number>
+      <title>Jesus, lead the way</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 12:2; II Corinthians 4:17; II Timothy 2:12; Matthew 6:34</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="336">
+      <number>336</number>
+      <title>Jesus, Saviour, pilot me</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Mark 4:39; Psalms 107:29-30</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="337">
+      <number>337</number>
+      <title>Far off I see the goal</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Genesis 28:15; Jude 1:23-24; Psalms 121:3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="338">
+      <number>338</number>
+      <title>He leadeth me: O blessed thought</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Philippians 4:11; Psalms 23:2; Psalms 32:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="339">
+      <number>339</number>
+      <title>Guide me, O Thou great Jehovah</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Exodus 13:21; John 6:31-35; Psalms 73:24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="340">
+      <number>340</number>
+      <title>Children of the Heavenly King</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 35:10; Luke 12:32</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="341">
+      <number>341</number>
+      <title>Lead us, O Father, in the paths of peace</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 10:20; Matthew 7:13-14; Proverbs 4:18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="342">
+      <number>342</number>
+      <title>O God of Bethel, by whose hand</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Genesis 28:20-21; Genesis 9:9; Psalms 103:17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="343">
+      <number>343</number>
+      <title>Lead us, Heavenly Father, lead us</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 4:15; II Corinthians 6:10; Philippians 4:19</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="344">
+      <number>344</number>
+      <title>If thou but suffer God to guide thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Proverbs 3:5-6; Psalms 55:22</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="345">
+      <number>345</number>
+      <title>He who would valiant be</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 2:11; Joshua 1:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="346">
+      <number>346</number>
+      <title>Awake, my soul, stretch every nerve</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 12:1; Philippians 3:13-14; Revelation 3:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="347">
+      <number>347</number>
+      <title>God is my strong Salvation</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 27</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="348">
+      <number>348</number>
+      <title>Faith of our fathers! living still</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 11:33-34; I Timothy 6:12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="349">
+      <number>349</number>
+      <title>Stand up, stand up for Jesus</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 6:13; I Corinthians 16:13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="350">
+      <number>350</number>
+      <title>Onward, Christian soldiers</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Deuteronomy 31:6; I Timothy 6:12; Matthew 16:18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="351">
+      <number>351</number>
+      <title>March on, o soul, with strength</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Daniel 10:19; Hebrews 11:27; I Peter 5:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="352">
+      <number>352</number>
+      <title>Rise up, O men of God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ecclesiastes 9:10; I Corinthians 16:13; II Samuel 10:12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="353">
+      <number>353</number>
+      <title>Am I a soldier of the cross</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Timothy 2:1; II Timothy 2:12; II Timothy 2:3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="354">
+      <number>354</number>
+      <title>The Son of God goes forth to war</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 16:24; Revelation 12:11; Revelation 6:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="355">
+      <number>355</number>
+      <title>O grant us light, that we may know</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Exodus 32:26; I Chronicles 12:18; II Corinthians 5:14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="356">
+      <number>355</number>
+      <title>Who is on the Lord's side</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Exodus 32:26; I Chronicles 12:18; II Corinthians 5:14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="357">
+      <number>356</number>
+      <title>We are living, we are dwelling</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Timothy 6:12; Romans 8:22</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="358">
+      <number>357</number>
+      <title>Now Israel may say, and that in truth</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 124</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="359">
+      <number>358</number>
+      <title>God of grace and God of glory</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Chronicles 28:10; Joshua 1:9; Psalms 27:14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="360">
+      <number>359</number>
+      <title>Fight the good fight with all thy might</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Timothy 4:7; I Timothy 6:12; Luke 8:50</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="361">
+      <number>360</number>
+      <title>Christian, dost thou see them</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 6:12; Mark 14:38</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="362">
+      <number>361</number>
+      <title>Once to every man and nation</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Thessalonians 1:9; Joshua 24:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="363">
+      <number>362</number>
+      <title>Soldiers of Christ, arise</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 6:11-17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="364">
+      <number>363</number>
+      <title>My soul, be on thy guard</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 16:13; I Peter 5:8-9; Mark 13:37</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="365">
+      <number>364</number>
+      <title>Give to the winds thy fears</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 12:2; Philippians 4:6-7; Psalms 34:4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="366">
+      <number>365</number>
+      <title>All the way my Saviour leads me</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Numbers 20:11; Psalms 16:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="367">
+      <number>366</number>
+      <title>Whate're my God ordains is right</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 13:5; Romans 8:28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="368">
+      <number>367</number>
+      <title>My Jesus, as Thou wilt</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 4:19; Mark 14:36</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="369">
+      <number>368</number>
+      <title>My hope is built on nothing less</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 4:12; Hebrews 6:19; Philippians 3:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="370">
+      <number>369</number>
+      <title>How firm a foundation, ye saints of the Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 3:1l; Isaiah 41:10; Isaiah 43:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="371">
+      <number>370</number>
+      <title>I love the Lord, His strength is mine</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="372">
+      <number>371</number>
+      <title>Ask ye what great thing I know</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 3:4; I Corinthians 2:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="373">
+      <number>372</number>
+      <title>Grace and truth shall mark the way</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 25</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="374">
+      <number>373</number>
+      <title>Come, ye disconsolate, where're ye languish</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 40:1-2; Isaiah 54:7; John 14:18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="375">
+      <number>374</number>
+      <title>Be still, my soul: the Lord is on thy side</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Thessalonians 4:17; Romans 8:31-39</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="376">
+      <number>375</number>
+      <title>Who trusts in God, a strong abode</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Jude 1:24-25; Psalms 23:4; Psalms 71:3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="377">
+      <number>376</number>
+      <title>Jesus; keep me near the cross</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Galatians 2:20; Revelation 22:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="378">
+      <number>377</number>
+      <title>I to the hills will lift my eyes</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 121</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="379">
+      <number>378</number>
+      <title>My faith looks up to Thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 12:2; Hebrews 2:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="380">
+      <number>379</number>
+      <title>Come, Thou Fount of every blessing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 2:7-8; I Samue1 7:12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="381">
+      <number>381</number>
+      <title>God is our Refuge and our Strength</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 46</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="382">
+      <number>382</number>
+      <title>Not so in haste my heart</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 30:15; Psalms 27:13; Psalms 62:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="383">
+      <number>383</number>
+      <title>I love to tell the story</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 66:16; Revelation 5:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="384">
+      <number>384</number>
+      <title>Father, in Thy mysterious presence kneeling</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 10:22; Psalms 32:7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="385">
+      <number>385</number>
+      <title>What a Friend we have in Jesus</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Thessalonians 5:17; John 15:15; Proverbs 18:24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="386">
+      <number>386</number>
+      <title>Approach, my soul, the mercy seat</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 4:16; Matthew 11:28; Psalms 27:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="387">
+      <number>387</number>
+      <title>To God my earnest voice I raise</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 142</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="388">
+      <number>388</number>
+      <title>O Lord Most High, with all my heart</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="389">
+      <number>389</number>
+      <title>Where high the heavenly temple stands</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 4:14-16; Hebrews 5:7-8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="390">
+      <number>390</number>
+      <title>Open my eyes, that I may see</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 1:18-19; Isaiah 35:5; Psalms 119:18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="391">
+      <number>391</number>
+      <title>Prayer is the soul's sincere desire</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 9:11; Luke 11:1; Romans 8:26</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="392">
+      <number>392</number>
+      <title>O Lord, make haste to hear my cry</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 141:1-4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="393">
+      <number>393</number>
+      <title>Thy loving-kindness, Lord, is good and free</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 69:17-19; Psalms 69:29-36</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="394">
+      <number>394</number>
+      <title>In the hour of trial</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 7:25; Luke 22:32; Romans 8:34</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="395">
+      <number>395</number>
+      <title>God be in my head</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Romans 14:8; Romans 6:13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="396">
+      <number>396</number>
+      <title>O gracious God forsake me not</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 71:18-24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="397">
+      <number>397</number>
+      <title>More love to Thee, O Christ</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 21:15; Philippians 1:20-21; Psalms 116:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="398">
+      <number>398</number>
+      <title>Sweet hour of prayer, sweet hour of Prayer</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 2:42; Ephesians 6:18; Psalms 27:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="399">
+      <number>399</number>
+      <title>Love divine, all loves excelling</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 3:18; John 3:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="400">
+      <number>400</number>
+      <title>O Love that wilt not let me go</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hosea 11:8; Matthew 16:25; Romans 8:35-39</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="401">
+      <number>401</number>
+      <title>Jesus, the very thought of Thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 3:19; Psalms 25:14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="402">
+      <number>402</number>
+      <title>I sought the Lord, and afterward I knew</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I John 4:I9; Jeremiah 31:3; Matthew 14:30-31</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="403">
+      <number>403</number>
+      <title>Tell me the old, old story</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Timothy 1:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="404">
+      <number>404</number>
+      <title>Jesus, Thy boundless love to me</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Corinthians 5:14-15; Philippians 1:21</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="405">
+      <number>405</number>
+      <title>My Jesus, I love Thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 1:8; Revelation 5:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="406">
+      <number>406</number>
+      <title>My heart is resting, O my God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 2:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="407">
+      <number>407</number>
+      <title>Rejoice, ye pure in heart</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 62:10; Philippians 4:4; Psalms 40:3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="408">
+      <number>408</number>
+      <title>Come, we that love the Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Nehemiah 8:10; Psalms 149:2; Psalms 63:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="409">
+      <number>409</number>
+      <title>My God, I thank Thee, who hast made</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 2:7; Genesis 1:31; Psalms 16:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="410">
+      <number>410</number>
+      <title>The King of Glory standeth</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Mark 4:39; Psalms 33:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="411">
+      <number>411</number>
+      <title>Take the name of Jesus with you</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 1:21; Philippians 2:10; Proverbs 18:10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="412">
+      <number>412</number>
+      <title>The Lord I will at all times bless</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 34</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="413">
+      <number>413</number>
+      <title>I waited for the Lord my God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Habakkuk 3:17-18; Psalms 40:1-4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="414">
+      <number>414</number>
+      <title>Jesus, priceless treasure</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Philippians 3:8; Psalms 73:25</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="415">
+      <number>415</number>
+      <title>O Morning Star, how fair and bright</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Revelation 22:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="416">
+      <number>416</number>
+      <title>Dear Lord and Father of mankind</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 4:9; Isaiah 30:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="417">
+      <number>417</number>
+      <title>In heavenly love abiding</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Timothy 4:18; Job 23:10; John 15:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="418">
+      <number>418</number>
+      <title>Sometimes a light surprises</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 12:24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="419">
+      <number>419</number>
+      <title>From every stormy wind that blows</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Exodus 25:22; Hebrews 9:5; Psalms 46:1-2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="420">
+      <number>420</number>
+      <title>Peace, perfect peace, in this dark world of sin</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 26:3; John 14:27</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="421">
+      <number>421</number>
+      <title>They cast their nets in Galilee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 3:15; Ephesians 2:14; Philippians 4:6-7</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="422">
+      <number>422</number>
+      <title>The steps of those whom He approves</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 37</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="423">
+      <number>423</number>
+      <title>Thou hidden Source of calm repose</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 3:11; Psalms 57:1; Psalms 91:9-10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="424">
+      <number>424</number>
+      <title>O what their joy and their glory must be</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Daniel 12:3; Matthew 13:43</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="425">
+      <number>425</number>
+      <title>For all the saints who from their labors rest</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Proverbs 4:18; Revelation 14:13; Revelation 7:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="426">
+      <number>426</number>
+      <title>Hark! hark, my soul! angelic songs are swelling</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 30:5; Romans 13:12; Romans 8:18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="427">
+      <number>427</number>
+      <title>Ten thousand times ten thousand</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Revelation 5:11-13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="428">
+      <number>428</number>
+      <title>Jerusalem the golden</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Hebrews 11:16; Revelation 21:18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="429">
+      <number>429</number>
+      <title>For thee, O dear, dear country</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 35:10; Revelation 21:4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="430">
+      <number>430</number>
+      <title>Brief life is here our portion</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 13:12; II Timothy 2:12; John 14:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="431">
+      <number>431</number>
+      <title>O where are kings and empires now</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Daniel 2:34-35; Ezekiel 48:12; Matthew 16:18; Psalms 48:12-13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="432">
+      <number>432</number>
+      <title>Built on the Rock the Church doth stand</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 6:l9; I Peter 2:4-5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="433">
+      <number>433</number>
+      <title>Christ is made the sure Foundation</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 2:20; I Peter 2:6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="434">
+      <number>434</number>
+      <title>Glorious things of thee are spoken</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 106:39-41; Psalms 87:3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="435">
+      <number>435</number>
+      <title>I love Thy Kingdom, Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Colossians 1:24; Ephesians 5:27; Psalms 137:5-6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="436">
+      <number>436</number>
+      <title>City of God, how broad and far</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 26:1; Matthew 6:10; Matthew 6:33; Psalms 48:12; Psalms 48:2; Psalms 48:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="437">
+      <number>437</number>
+      <title>The Church's one Foundation</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 20:28; Ephesians 4:4-6; I Corinthians 3:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="438">
+      <number>438</number>
+      <title>Within Thy temple's sacred courts</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 48</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="439">
+      <number>439</number>
+      <title>With joy I heard my friends exclaim</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 122</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="440">
+      <number>440</number>
+      <title>How dear to me, O Lord of Hosts</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 84</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="441">
+      <number>441</number>
+      <title>Pleasant are Thy courts above</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="442">
+      <number>442</number>
+      <title>Here, O my Lord,I see Thee face to face</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 6:58; Luke 22:29-30; Song of Solomon 2:4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="443">
+      <number>443</number>
+      <title>A parting hymn we sing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 2:9; Mark 14:26</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="444">
+      <number>444</number>
+      <title>According to Thy gracious word 444</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 11:25; Luke 22:19</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="445">
+      <number>445</number>
+      <title>Bread of the world in mercy broken</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Peter 2:24; Matthew 26:26-28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="446">
+      <number>446</number>
+      <title>Be known to us in breaking bread</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 24:30-35</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="447">
+      <number>447</number>
+      <title>Let us break bread together</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 11:27-28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="448">
+      <number>448</number>
+      <title>'Twas on that night when doomed to know</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 11:23-26</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="449">
+      <number>449</number>
+      <title>For the bread, which Thou hast broken</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 26:26-28; Revelation 19:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="450">
+      <number>450</number>
+      <title>O Bread of Life, for all men broken</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 6:54-58</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="451">
+      <number>451</number>
+      <title>Jesus, Friend, so kind and gentle</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 2:39; Ephesians 6:4; Luke 18:16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="452">
+      <number>452</number>
+      <title>O Jesus Christ, our Lord most dear</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:11; Luke 2:40</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="453">
+      <number>453</number>
+      <title>O perfect Love, all human thought transcending</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 5:25; John 2:2; Matthew 19:4-6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="454">
+      <number>454</number>
+      <title>O Love divine and golden</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 5:31; Ephesians 5:33</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="455">
+      <number>455</number>
+      <title>O happy home, where Thou art loved the dearest</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>John 11:5; Proverbs 15:17; Proverbs 31:28</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="456">
+      <number>456</number>
+      <title>All things bright and beautiful</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ecclesiastes 3:11; Genesis 1:31; Matthew 6:28-29</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="457">
+      <number>457</number>
+      <title>Saviour, teach me, day by day</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I John 4:I9; John 14:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="458">
+      <number>458</number>
+      <title>Father, lead me day by day</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>III John 4; Matthew 6:13; Psalms 139:24</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="459">
+      <number>459</number>
+      <title>Tell me the stories of Jesus</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Mark 10:13-16; Matthew 21:15-16</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="460">
+      <number>460</number>
+      <title>I think when I read that sweet story of old</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Mark 10:14-16; Matthew 18:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="461">
+      <number>461</number>
+      <title>It fell upon a summer day</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 16:16-17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="462">
+      <number>462</number>
+      <title>Once in royal David's city</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 2:6-17</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="463">
+      <number>463</number>
+      <title>With happy voices ringing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 21:15; Psalms 100</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="464">
+      <number>464</number>
+      <title>Morning has broken</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Genesis 1:5; Genesis 2:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="465">
+      <number>465</number>
+      <title>Jesus loves me this I know</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 18:2; Matthew 19:14</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="466">
+      <number>466</number>
+      <title>God who made the earth</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 121:2; Psalms 124:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="467">
+      <number>467</number>
+      <title>Father, we thank Thee for the night</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 145:9; Psalms 68:19</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="468">
+      <number>468</number>
+      <title>O Thou whose feet have climbed life's hill</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 16:13; I John 2:14; Luke 2:40</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="469">
+      <number>469</number>
+      <title>Now in the days of youth</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ecclesiastes 9:10; Psalms 100:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="470">
+      <number>470</number>
+      <title>We would be building; temples still undone</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 3:10-11; Luke 14:30; Nehemiah 2:20</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="471">
+      <number>471</number>
+      <title>Shepherd of eager youth</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 3:21; John 10:4; Revelation 5:12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="472">
+      <number>472</number>
+      <title>Just as I am, Thine own to be</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 6:19-20; II Corinthians 5:14-15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="473">
+      <number>473</number>
+      <title>Blest be the tie that binds</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Galatians 6:2; Hebrews 12:23; I John 4:II</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="474">
+      <number>474</number>
+      <title>O brother man, fold to thy heart thy brother</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 10:38; I John 3:17; I Thessalonians 4:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="475">
+      <number>475</number>
+      <title>Through the night of doubt and sorrow</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 4:4-6; Revelation 12:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="476">
+      <number>476</number>
+      <title>Forgive, O Lord, our severing ways</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 4:4-6</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="477">
+      <number>477</number>
+      <title>Put forth, o God,Thy Spirit's might</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 4:3; John 17:21</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="478">
+      <number>478</number>
+      <title>Hills of the North, rejoice</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 2:8; Psalms 72:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="479">
+      <number>479</number>
+      <title>In Christ there is no East or West</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 17:26; Colossians 3:11; Psalms 33:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="480">
+      <number>480</number>
+      <title>Let there be light, Lord God of Hosts</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 11:6-9; Psalms 46:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="481">
+      <number>481</number>
+      <title>Lift up our hearts, O King of Kings</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 11:9; Lamentations 3:41</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="482">
+      <number>482</number>
+      <title>The light of God is falling</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>I Corinthians 8:11-13; Luke 15:32; Romans 14:21</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="483">
+      <number>483</number>
+      <title>O God of love, O King of peace</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Micah 4:3; Psalms 46:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="484">
+      <number>484</number>
+      <title>"Thy Kingdom come," on bended knee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 6:10; Romans 13:12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="485">
+      <number>485</number>
+      <title>Eternal God, whose power upholds</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 11:9; Jeremiah 31:34; Micah 4:2-4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="486">
+      <number>486</number>
+      <title>Father eternal, Ruler of creation</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 11:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="487">
+      <number>487</number>
+      <title>God the omnipotent! King, who ordainest</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Leviticus 26:6; Psalms 29:11</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="488">
+      <number>488</number>
+      <title>Thy Kingdom come, O Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Daniel 7:14; Psalms 62:7-8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="489">
+      <number>489</number>
+      <title>Christ for the world we sing</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>1 John 2:2</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="490">
+      <number>490</number>
+      <title>Turn back, o man, forswear thy foolish ways</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ezekiel 18:31; Mark 1:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="491">
+      <number>491</number>
+      <title>O Zion, haste, thy mission high fulfilling</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ezekiel 18:23; Matthew 28:19; Romans 10:14-15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="492">
+      <number>492</number>
+      <title>Christ is the world's true Light</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 9:6; John 8:12; John 8:36</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="493">
+      <number>493</number>
+      <title>Lord, bless and pity us</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 67</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="494">
+      <number>494</number>
+      <title>Ye Christian heralds, go proclaim</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 26:18; Luke 24:27; Matthew 10:32</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="495">
+      <number>495</number>
+      <title>Remember all the people</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Matthew 9:36-38</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="496">
+      <number>496</number>
+      <title>Jesus shall reign where're the sun</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ecclesiastes 12:1; Psalms 72</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="497">
+      <number>497</number>
+      <title>Arm of the Lord, awake, awake</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 51:9; Psalms 102:13</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="498">
+      <number>498</number>
+      <title>Heralds of Christ, who bear the King's commands</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 40:3-5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="499">
+      <number>499</number>
+      <title>The morning light is breaking</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 60:1-5; John 15:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="500">
+      <number>500</number>
+      <title>God is working, His purpose out</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Habakkuk 2:14; Isaiah 11:9; Isaiah 42:4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="501">
+      <number>501</number>
+      <title>The ends of all the earth shall hear</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 22:27-31; Psalms 86:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="502">
+      <number>502</number>
+      <title>Christ shall have dominion</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 72</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="503">
+      <number>503</number>
+      <title>We have heard the joyful sound</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 16:31; Matthew 1:21; Psalms 96:2-3</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="504">
+      <number>504</number>
+      <title>We've a story to tell to the nations</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Acts 1:8; Luke 2:10-11; Mark 13:10</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="505">
+      <number>505</number>
+      <title>Hail to the brightness of Zion's glad morning</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Isaiah 35:1; Isaiah 40:9; Luke 2:32</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="506">
+      <number>506</number>
+      <title>Fling out the banner! let it float</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 20:5; Psalms 60:4</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="507">
+      <number>507</number>
+      <title>Where cross the crowded ways of life</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Luke 19:41; Mark 9:41; Matthew 9:36</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="508">
+      <number>508</number>
+      <title>O Holy City, seen of John</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Revelation 21:2-4; Revelation 22:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="509">
+      <number>509</number>
+      <title>From ocean unto ocean</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 144:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="510">
+      <number>510</number>
+      <title>O beautiful for spacious skies</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Deuteronomy 8:14; Deuteronomy 8:18; Deuteronomy 8:7-9; Psalms 67:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="511">
+      <number>511</number>
+      <title>O God of earth and alter</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Chronicles 7:14; Job 5:19; Psalms 119:67</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="512">
+      <number>512</number>
+      <title>Not alone for mighty empire</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Deuteronomy 7:12-13; II Corinthians 4:18; Matthew 6:33</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="513">
+      <number>513</number>
+      <title>My country, 'tis of thee</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Galatians 5:1; Leviticus 25:10; Psalms 85:1</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="514">
+      <number>514</number>
+      <title>God bless our native land</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 137:5-6; Psalms 33:12</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="515">
+      <number>515</number>
+      <title>God of our fathers, whose almighty hand</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Deuteronomy 32:47; Deuteronomy 83:29; I Chronicles 28:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="516">
+      <number>516</number>
+      <title>My song forever shall record</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 89:1-18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="517">
+      <number>517</number>
+      <title>Judge eternal, throned in splendor</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 72:4; Psalms 89:15</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="518">
+      <number>518</number>
+      <title>Arise, o Lord, our God, arise</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 132:8-18</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="519">
+      <number>519</number>
+      <title>We dedicate this temple</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Genesis 28:16-17; I Kings 8:11; I Kings 8:27-29</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="520">
+      <number>520</number>
+      <title>Good of the prophets! Bless the prophets' sons</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>II Kings 2:13-15; I Samue1 10:26</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="521">
+      <number>521</number>
+      <title>Eternal Father, strong to save</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Mark 4:39; Psalms 107:23-30; Psalms 89:9</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="522">
+      <number>522</number>
+      <title>Almighty Father, strong to save</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 121:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="523">
+      <number>523</number>
+      <title>O God, beneath, Thy guiding hand</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Genesis 12:1; Nehemiah 9:19-20</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="524">
+      <number>524</number>
+      <title>We plow the fields, and scatter</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ezekiel 34:26; Genesis 8:22</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="525">
+      <number>525</number>
+      <title>Come, ye thankful people, come</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Mark 4:28; Matthew 13:24-30; Matthew 13:3-8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="526">
+      <number>526</number>
+      <title>Ring out the old, ring in the new</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Ephesians 4:24; II Peter 3:13; Revelation 21:1; Revelation 21:5</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="527">
+      <number>527</number>
+      <title>Great God, we sing that mighty hand</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture>Psalms 37:23; Psalms 48:14; Psalms 62:8</scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="528">
+      <number>528</number>
+      <title>Let all who enter here</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="529">
+      <number>529</number>
+      <title>Come, my soul, thy suit prepare</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="530">
+      <number>530</number>
+      <title>Father, the watches of the night are o'er</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="531">
+      <number>531</number>
+      <title>Come, dearest Lord, descend and dwell</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="532">
+      <number>532</number>
+      <title>O Thou who hearest every heartfelt prayer</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="533">
+      <number>533</number>
+      <title>Bless Thou the gifts our hands have brought</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="534">
+      <number>533</number>
+      <title>Lord, for the mercies of the night</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="535">
+      <number>534</number>
+      <title>Let the words of my mouth</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="536">
+      <number>535</number>
+      <title>Hear our prayer, O Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="537">
+      <number>536</number>
+      <title>To my humble supplication</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="538">
+      <number>537</number>
+      <title>Create in me a clean heart, O God</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="539">
+      <number>538</number>
+      <title>Father, fill us with Thy love</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="540">
+      <number>539</number>
+      <title>Lead me, Lord, lead me in Thy righteousness</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="541">
+      <number>540</number>
+      <title>The lone, wild fowl in lofty flight</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="542">
+      <number>541</number>
+      <title>Day by day</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="543">
+      <number>542</number>
+      <title>Almighty Father, hear our prayer</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="544">
+      <number>543</number>
+      <title>Part in peace: Christ's life was peace</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="545">
+      <number>544</number>
+      <title>Praise God from whom all blessings flow</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="546">
+      <number>545</number>
+      <title>Glory be to the Father (Gloria Patri) 545</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="547">
+      <number>546</number>
+      <title>Glory be to the Father (Gloria Patri) 546</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="548">
+      <number>547</number>
+      <title>Let Thy Word abide in us</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="549">
+      <number>548</number>
+      <title>O Lord, open Thou our eyes</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="550">
+      <number>549</number>
+      <title>Father of mercies, in Thy Word</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="551">
+      <number>550</number>
+      <title>Write these words in our hearts</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="552">
+      <number>551</number>
+      <title>The sacrifices of God are a broken spirit</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="553">
+      <number>552</number>
+      <title>We give Thee but Thine own</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="554">
+      <number>554</number>
+      <title>O dearest Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="555">
+      <number>555</number>
+      <title>All things are Thine; no gift have we</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="556">
+      <number>556</number>
+      <title>All things come of Thee, O Lord</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="557">
+      <number>557</number>
+      <title>Father, give Thy benediction</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="558">
+      <number>558</number>
+      <title>Amen</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="559">
+      <number>559</number>
+      <title>Amen</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="560">
+      <number>560</number>
+      <title>Amen</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="561">
+      <number>561</number>
+      <title>Amen</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="562">
+      <number>562</number>
+      <title>Amen</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="563">
+      <number>563</number>
+      <title>Amen</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="564">
+      <number>564</number>
+      <title>Amen</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="565">
+      <number>565</number>
+      <title>Amen</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="566">
+      <number>566</number>
+      <title>Amen</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="567">
+      <number>567</number>
+      <title>Amen</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="568">
+      <number>568</number>
+      <title>Lord, have mercy upon us (Kyrie)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="569">
+      <number>569</number>
+      <title>Lord, have mercy upon us (Kyrie)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="570">
+      <number>570</number>
+      <title>Lord, have mercy upon us (Kyrie)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="571">
+      <number>571</number>
+      <title>Lord, have mercy upon us (Kyrie)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="572">
+      <number>572</number>
+      <title>Glory be to God on high (Gloria in excelsis)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="573">
+      <number>573</number>
+      <title>Lift up your hearts (Sursum corda)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="574">
+      <number>574</number>
+      <title>Lift up your hearts (Sursum corda)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="575">
+      <number>575</number>
+      <title>Glory be to Thee, O Lord (Gloria tibi) 575</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="576">
+      <number>576</number>
+      <title>Glory be to Thee, O Lord (Gloria tibi) 576</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="577">
+      <number>577</number>
+      <title>Glory be to Thee, O Lord (Gloria tibi) 577</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="578">
+      <number>578</number>
+      <title>Thanks be to Thee, O Christ (Gratia tibi)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="579">
+      <number>579</number>
+      <title>Glory be to Thee, O Lord (Gloria tibi) 579</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="580">
+      <number>580</number>
+      <title>Praise be to Thee, o Christ (Laus tibi)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="581">
+      <number>581</number>
+      <title>Holy, Holy, Holy, Lord God of Hosts (Sanctus)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="582">
+      <number>582</number>
+      <title>Holy, Holy, Holy, Lord God of Hosts (Sanctus)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="583">
+      <number>583</number>
+      <title>Holy, Holy, Holy, Lord God of Hosts (Sanctus)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="584">
+      <number>584</number>
+      <title>Holy, Holy, Holy, Lord God of Hosts (Sanctus)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="585">
+      <number>585</number>
+      <title>O Lamb of God that takest away the sins of the world (Agnus Dei)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="586">
+      <number>586</number>
+      <title>O come, let us sing unto the Lord (venite)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="587">
+      <number>587</number>
+      <title>O come, let us sing unto the Lord (venite)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="588">
+      <number>588</number>
+      <title>O come, let us sing unto the Lord (venite)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="589">
+      <number>589</number>
+      <title>We praise Thee, o God: we acknowledge Thee to be the Lord (Te Deum)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="590">
+      <number>590</number>
+      <title>We praise Thee, o God: we acknowledge Thee to be the Lord (Te Deum)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="591">
+      <number>591</number>
+      <title>We praise Thee, o God: we acknowledge Thee to be the Lord (Te Deum)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="592">
+      <number>592</number>
+      <title>Blessed be the Lord God of Israel (Benedictus)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="593">
+      <number>593</number>
+      <title>O be joyful in the Lord (Jubilate Deo)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="594">
+      <number>594</number>
+      <title>O be joyful in the Lord (Jubilate Deo)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="595">
+      <number>595</number>
+      <title>O be joyful in the Lord (Jubilate Deo)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="596">
+      <number>596</number>
+      <title>My soul doth magnify the Lord (Magnificat)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="597">
+      <number>597</number>
+      <title>Lord, now lettest Thou Thy servant depart in peace (Nunc dimittis)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="598">
+      <number>598</number>
+      <title>Lord, now lettest Thou Thy servant depart in peace (Nunc dimittis)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="599">
+      <number>599</number>
+      <title>Lord, now lettest Thou Thy servant depart in peace (Nunc dimittis)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+    <hymn name="600">
+      <number>600</number>
+      <title>Lord, now lettest Thou Thy servant depart in peace (Nunc dimittis)</title>
+      <tune></tune>
+      <composer></composer>
+      <author></author>
+      <scripture></scripture>
+      <topic></topic>
+      <tags></tags>
+    </hymn>
+  </hymns>
+</hymnal>

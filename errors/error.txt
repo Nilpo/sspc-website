@@ -1,0 +1,39 @@
+Here is a complete list if HTTP error codes.
+
+100: Code 100 Continue
+101: Code 101 Switching Protocols
+200: OK response
+201: Created response
+202: Accepted response
+203: Non-Authoritative response
+204: No Content response
+205: Reset Content response
+206: Partial Content response
+300: Code 300 Multiple Choices
+301: Code 301 Moved Permanently
+302: Code 302 Moved Temporarily
+303: Code 303 See Other
+304: Not Modified response
+305: Code 305 Use Proxy
+400: Code 400 Bad Request
+401: Code 401 Unauthorized
+402: Code 402 Payment Required
+403: Code 403 Forbidden
+404: Code 404 Not Found
+405: Code 405 Method Not Allowed
+406: Code 406 Not Acceptable
+407: Code 407 Proxy Authentication Required
+408: Code 408 Request Time-out
+409: Code 409 Conflict
+410: Code 410 Gone
+411: Code 411 Length Required
+412: Code 412 Precondition Failed
+413: Code 413 Request Entity Too Large
+414: Code 414 Request-URI Too Large
+415: Code 415 Unsupported Media Type
+500: Code 500 Internal Server Error
+501: Code 501 Not Implemented
+502: Code 502 Bad Gateway
+503: Code 503 Service Unavailable
+504: Code 504 Gateway Time-out
+505: Code 505 HTTP Version Not Supported

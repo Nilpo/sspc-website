@@ -1,0 +1,136 @@
+<?
+/*
+##################################################
+#
+# Filename..........: $RCSfile: Account.class,v $
+# Original Author...: Anthony L. Awtrey
+# Version...........: $Revision: 1.2 $
+# Last Modified By..: $Author: aawtrey $
+# Last Modified.....: $Date: 2005/05/11 18:15:56 $
+#
+# Copyright 2005 Anthony Awtrey
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+*/
+
+class Account {
+
+  var $page;
+  var $data;
+  var $error_string;
+
+  /*
+   * Class initialization
+   */
+  function Account() {
+    global $_SERVER;
+    global $_SESSION;
+    global $_REQUEST;
+    global $_POST;
+    global $_GET;
+  }
+
+  function print_change_form() {
+    $this->data = new Data("account");
+    list($inId, $inLogin, $inPassword, $inName, $inEmail, $inAvatar) = array_values($this->data->get_record('id',$_SESSION['login']));
+    $page              = new Page();
+    $page->title       = "Change Information";
+    $page->description = "Change login information for this website.";
+    $page->header      = "Change Information";
+    $page->content = "";
+    if ($this->error_string) { $page->content .= "<p class=\"error\">" . $this->error_string . "</p>\n"; }
+    require_once('Form.class');
+    $form = new Form('account.php','post');
+    $form->hidden('action','edit');
+    $form->hidden('inId',$inId);
+    $form->hidden('backto',$_REQUEST['backto']);
+    $form->text('Login','inLogin',$inLogin,20);
+    $form->text('Password','inPassword',$inPassword,20);
+    $form->text('Name','inName',$inName,20);
+    $form->text('Email Address','inEmail',$inEmail,20);
+    $form->text('Avatar','inAvatar',$inAvatar,20);
+    $form->submit('submit','Change');
+    $form->submit('submit','Cancel');
+    $page->content .= $form->render();
+    $page->display();
+  }
+
+  function print_login_form() {
+    $page              = new Page();
+    $page->title       = "Login";
+    $page->description = "Login to this website.";
+    $page->header      = "Login";
+    $page->content = "";
+    if ($this->error_string) { $page->content .= "<p class=\"error\">" . $this->error_string . "</p>\n"; }
+    require_once('Form.class');
+    $form = new Form('account.php','post');
+    $form->hidden('action','login');
+    $form->hidden('backto',$_REQUEST['backto']);
+    $form->text('Login','inLogin',$_POST['inLogin'],20);
+    $form->password('Password','inPassword','',20);
+    $form->submit('submit','Login');
+    $form->submit('submit','Cancel');
+    $page->content .= $form->render();
+    $page->display();
+  }
+
+  function run() {
+    if ( $_SERVER["REQUEST_METHOD"] == 'POST' ) {
+      if ( $_POST['submit'] == 'Cancel' ) {
+        redirect('./'.$_POST['backto']);
+      }
+      if ( $_POST['action'] == 'login' ) {
+        if ( $_POST['inLogin'] && $_POST['inPassword'] ) {
+          if ( login($_POST['inLogin'],$_POST['inPassword']) ) {
+            redirect('./'.$_POST['backto']);
+          } else {
+            $this->error_string = "The account or password was incorrect!\n";
+            $this->print_login_form();
+          }
+        } else {
+          $error_string = "You must supply both a login and password!\n";
+          $this->print_login_form();
+        }
+      } elseif ( $_POST['action'] == 'edit' && $_SESSION['login'] ) {
+        if ( $_POST['inLogin'] && $_POST['inPassword'] && $_POST['inName'] && $_POST['inEmail'] ) {
+          $account = new Data("account");
+          $account->set_attribute('id', $_POST['inId']);
+          $account->set_attribute('login', $_POST['inLogin']);
+          $account->set_attribute('password', $_POST['inPassword']);
+          $account->set_attribute('name', $_POST['inName']);
+          $account->set_attribute('email', $_POST['inEmail']);
+          $account->set_attribute('avatar', $_POST['inAvatar']);
+          if ( $account->save() ) {
+            redirect('./'.$_POST['backto']);
+          }
+        } else {
+          $this->error_string = "You must supply a login, password, name and email!\n";
+          $this->print_change_form();
+        }
+      }
+    } elseif ( $_GET['action'] == 'logout' && $_SESSION['login'] ) {
+      logout();
+      redirect('./'.$_GET['backto']);
+    } elseif ( $_GET['action'] == 'edit' && $_SESSION['login'] ) {
+      $this->print_change_form();
+    } else {
+      $this->print_login_form();
+    }
+  }
+
+}
+
+?>

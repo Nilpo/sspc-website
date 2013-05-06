@@ -1,0 +1,23 @@
+php_flag register_globals off
+
+<Files *.sh>
+order allow,deny
+deny from all
+</Files>
+
+<Files *.pl>
+order allow,deny
+deny from all
+</Files>
+
+<Files *.sql>
+order allow,deny
+deny from all
+</Files>
+
+<Files *.dat>
+order allow,deny
+deny from all
+</Files>
+
+
