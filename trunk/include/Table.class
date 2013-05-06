@@ -1,0 +1,217 @@
+<?
+/*
+##################################################
+#
+# $RCSfile: Table.class,v $
+# Original Author...: Anthony L. Awtrey
+# Version...........: $Revision: 1.0 $
+# Last Modified By..: $Author: aawtrey $
+# Last Modified.....: $Date: 2005/04/20 21:38:09 $
+#
+# Copyright 2005 Anthony L. Awtrey
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
+#
+*/
+
+class Table {
+
+  var $header = array();
+  var $row    = array();
+  var $rows   = array();
+  var $cols   = array();
+
+  /*
+   * Constructor
+   */
+  function __construct($h='')
+  {
+    if ( $h != '' ) {
+      return($this->add_headers($h));
+    }
+    return($true);
+  }
+
+  function __destruct()
+  {
+  }
+
+  /*
+   * This method adds a column header $s to the table
+   * if $s is a string.
+   *
+   * Returns: If successful, True.  False otherwise.
+   */
+  function add_header($s)
+  {
+    if ( is_string($s) ) {
+      array_push($this->header,$s);
+      return(true);
+    }
+    return(false);
+  }
+
+  /*
+   * This method resets the headers of the table to
+   * the array $h.
+   *
+   * Returns: True ff successful.  False otherwise.
+   */
+   function add_headers($h)
+  {
+    if ( is_array($h) ) {
+      $this->header = ($h);
+      return(true);
+    }
+    return(false);
+  }
+
+  /* 
+   * This method adds a new cell of data $s to the current
+   * row.
+   *
+   * Returns: True
+   */
+  function add_cell($s)
+  {
+    array_push($this->row,$s);
+    return(true);
+  }
+
+  /* 
+   * This method adds a new row array $r to the table and increments
+   * the row to the next row for entry.
+   *
+   * Side Effects: if $r is not specified or is an empty array(), 
+   *               the current row (if it is non empty) is pushed
+   *               into the table and the row buffer is cleared.
+   * 
+   * Returns: True if a new row was pushed into the table, false
+   *          otherwise.
+   */ 
+  function add_row($r=array())
+  {
+    if ( is_array($r) && count($r) > 0 ) {
+      array_push($this->rows,$r);
+      return($true);
+    } elseif ( is_array($r) && count($this->row) > 0 ) {
+      array_push($this->rows,$this->row);
+      $this->row = array();
+      return($true);
+    }
+    return(false);
+  }
+
+  /*
+   * This method resets the current row buffer being inserted in 
+   * the table.
+   *
+   * Returns: True
+   */
+  function  reset_row()
+  {
+    $this->row = array();
+    return(true);
+  }
+
+  /*
+   * This method sets the alignment of column $column (starting at
+   * 0) to $direction ('left', 'center' or 'right').
+   *
+   * Returns True if the $column specified is valid and the $direction
+   * is one of 'left', 'center' or 'right'.  False otherwise.
+   */
+  function set_column_align($column,$direction) {
+    if ( is_int($column) ) {
+      if ( $direction == 'left' || $direction == 'center' || $direction == 'right' ) {
+        $this->cols[$column] = $direction;
+        return(true);
+      }
+    }
+    return(false);
+  }
+
+  /*
+   * This method gets the alignment of the column $column.  ("left", "center" or "right")
+   *
+   * Returns the alignment as a string or "" if the column specified
+   * doesn't exist.
+   */
+  function get_column_align($column) {
+    $result  = '';
+    if ( $this->cols[$column] != '' ) {
+      $result = ' align="'.$this->cols[$column].'"';
+    }
+    return($result);
+  }
+
+  /*
+   * This function generates the table header HTML string.
+   *
+   * Returns the table header string.
+   */
+  function get_header()
+  {
+    $result .= "  <tr bgcolor=\"#e0e0e0\">\n";
+    for ( $i=0; $i<count($this->header); $i++ ) {
+      $result .= "    <th".$this->get_column_align($i).">".$this->header[$i]."</th>\n";
+    }
+    $result .= "  </tr>\n";
+    return($result);
+  }
+
+  /*
+   * This method generates the HTML for the table constructed using 
+   * the above methods. $options is a optional string which, if set
+   * to "repeat_header" will repeat the table header (see get_header())
+   * ever 50 rows and at the end of the table.
+   *
+   * Returns: The generated table HTML.
+   */
+  function render($option='') {
+    $result  = "<table width=\"100%\" style=\"border-style:dotted; border-color:#C0C0C0; border-width:1px;\">\n";
+
+    $result .= $this->get_header();
+
+    for ( $i=0; $i<count($this->rows); $i++ ) {
+      if ( ($i) % 2 == 0 ) {
+        $result .= "  <tr bgcolor=\"#f0f0f0\">\n";
+      } else {
+        $result .= "  <tr>\n";
+      }
+      if ( $i != 0 && ($i) % 50 == 0 && $option == 'repeat_header' ) {
+        $result .= $this->get_header();
+      }
+      for ( $j=0; $j<count($this->rows[$i]); $j++ ) {
+        if ( $this->rows[$i][$j] == '' ) {
+          $result .= "    <td".$this->get_column_align($j).">&nbsp;</td>\n";
+        } else {
+          $result .= "    <td".$this->get_column_align($j).">".$this->rows[$i][$j]."</td>\n";
+        }
+      }
+      $result .= "  </tr>\n";
+    }
+
+    if ( $i > 50 ) {
+      if ( $option == 'repeat_header' ) {
+        $result .= $this->get_header();
+      }
+    }
+    $result .= "</table>\n";
+    return($result);
+  }
+
+}
+?>

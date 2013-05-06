@@ -1,0 +1,496 @@
+<?
+/*
+##################################################
+#
+# $RCSfile: Blog.class,v $
+# Original Author...: Anthony L. Awtrey
+# Version...........: $Revision: 1.6 $
+# Last Modified By..: $Author: aawtrey $
+# Last Modified.....: $Date: 2005/06/03 18:37:13 $
+#
+# Copyright 2005 Anthony L. Awtrey
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
+#
+*/
+
+class Blog {
+
+  var $page;
+  var $bdata;
+  var $cdata;
+  var $account;
+  var $relpath;
+  var $articles_per_page = 10;
+  var $error_string;
+
+  /*
+   * Class initialization
+   */
+  function Blog($inAccount) {
+    global $_SERVER;
+    global $_SESSION;
+    global $_REQUEST;
+    global $_POST;
+    global $_GET;
+    $this->page              = new Page();
+    $this->page->template    = "noprimary.tpl";
+    $this->page->title       = "Someone's Weblog";
+    $this->page->description = "This is someone's Weblog";
+    $this->bdata             = new Data("blog");
+    $this->cdata             = new Data("comment");
+    if ( $_SESSION['login'] ) {
+      $this->account           = $_SESSION['login'];
+    } else {
+      $this->account           = False;
+    }
+    $this->relpath = constant("RELPATH");
+  }
+
+  function print_articles($page='') {
+    if ( $page == '' ) { $page = 1; }
+    $article_count = $this->bdata->count_records();
+    $total_pages   = ceil( $article_count / $this->articles_per_page );
+    if ( $article_count > $this->articles_per_page ) {
+      $starting_article_number = ( ( $page * $this->articles_per_page ) - $this->articles_per_page ) +1;
+    } elseif ( $article_count == 0 ) {
+      $starting_article_number = 0;
+    } else {
+      $starting_article_number = 1;
+    }
+    if ( $page != $total_pages ) {
+      $ending_article_number   = $page * $this->articles_per_page;
+    } elseif ( $article_count > $this->articles_per_page ) {
+      $ending_article_number   = abs( ( $pages - ( $article_count / $this->articles_per_page ) ) * $this->articles_per_page);
+    } else {
+      $ending_article_number   = $article_count;
+    }
+    if ( $article_count > $this->articles_per_page && $page != 1 )            { $prevpage = $page - 1; }
+    if ( $article_count > $this->articles_per_page && $page != $total_pages ) { $nextpage = $page + 1; }
+    $this->page->content  = "<div class=\"graybg small\">\n";
+    $this->page->content .= "  <div class=\"center\">$starting_article_number to $ending_article_number of $article_count total articles</div>\n";
+    $this->page->content .= "</div>\n";
+    $page_links = "<div class=\"graybg small\">\n";
+    if ( $prevpage ) {
+      $page_links .= "  <div class=\"left\">[<a href=\"index.php?page=$prevpage\">Previous Page</a>]</div>\n";
+    } else {
+      $page_links .= "  <div class=\"left\"><span class=\"gray\">[Previous Page]</span></div>\n";
+    }
+    if ( $nextpage ) {
+      $page_links .= "  <div class=\"right\">[<a href=\"index.php?page=$nextpage\">Next Page</a>]</div>\n";
+    } else {
+      $page_links .= "  <div class=\"right\"><span class=\"gray\">[Next Page]</span></div>\n";
+    }
+    $page_links .= "</div>\n";
+    $this->page->content .= $page_links;
+    if ( $page > 1 ) {
+      $skip = ( $page * $this->articles_per_page ) - $this->articles_per_page;
+      $articles = $this->bdata->get_records("","","sdate DESC LIMIT $skip,$this->articles_per_page");
+    } else {
+      $articles = $this->bdata->get_records("","","sdate DESC LIMIT $this->articles_per_page");
+    }
+    while ( list($key,$val) = each($articles) ) {
+      $this->page->content .= $this->get_excerpt($val);
+      $this->page->content .= "<div class=\"graybg small\">\n";
+      if ( $this->account ) {
+        $this->page->content .= "  [ <a href=\"index.php?blogid=" . $val['id'] . "&action=edit\">Edit this story</a> ]\n";
+        $this->page->content .= "  [ <a href=\"index.php?blogid=" . $val['id'] . "&action=delete\">Delete this story</a> ]\n";
+      }
+      $this->page->content .= "</div><br /><br />\n\n";
+    }
+    $this->page->content .= $page_links;
+    if ( $this->account ) {
+      $this->page->content .= "<div class=\"graybg small\">\n";
+      $this->page->content .= "[<a href=\"index.php?action=add\">Add a story</a>]\n";
+      $this->page->content .= "</div>\n";
+    }
+    $this->page->display();
+  }
+
+  function get_excerpts($number_of_articles='2') {
+    $articles = $this->bdata->get_records("","","sdate DESC LIMIT $number_of_articles");
+    $content = '';
+    while ( list($key,$val) = each($articles) ) {
+      $content .= $this->get_excerpt($val);
+    }
+    return($content);
+  }
+
+  function get_excerpt($article) {
+    $account = new Data("account");
+    $account = $account->get_record_by_id($article['account']);
+    $content = '';
+    $content .= "<div class=\"post\">\n";
+    $content .= "  <h4>" . $article['headline'] . "</h4>\n";
+    $content .= "  <div class=\"contentarea\">\n";
+    $content .= "    <div class=\"details\">Posted by " . $account["name"] . " on " . date('F dS Y', strtotime($article['sdate']) ) . "</div>\n";
+    $content .= "    <img src=\"" . $this->relpath . "common/" . $account["avatar"] . "\" class=\"left\" alt=\"" .  $account["name"] . "\" />\n";
+    $short_story = truncate_string(htmlentity2str($article['story']));
+    if ( strlen($short_story) != strlen($article["story"]) ) {
+      $short_story .= " ...";
+    }
+    $content .= "    <p>" . $short_story . "</p>\n";
+    $content .= "    <ul class=\"controls\">\n";
+    $number_of_comments = $this->cdata->count_records('blog',$article['id']);
+    if ( $number_of_comments > 0 ) {
+      $content .= "      <li><a class=\"comments\" href=\""  . $this->relpath . "blogs/" . $article['id'] . ".php\">Comment"; if ( $number_of_comments > 1 ) { $content .= "s"; } $content .= "</a> ($number_of_comments)</li>\n";
+    } else {
+      $content .= "      <li><a class=\"comments\" href=\"" . $this->relpath . "blogs/" . "index.php?action=comment&blogid=" . $article['id'] . "\">Comment?</a></li>\n";
+    }
+    $content .= "      <li><a class=\"more\" href=\"" . $this->relpath . "blogs/" . $article['id'] . ".php\">Read More</a></li>\n";
+    $content .= "    </ul>\n";
+    $content .= "  </div>\n";
+    $content .= "</div><br />\n\n";
+    return($content);
+  }
+
+  function print_article($article) {
+    if ( is_array($article) ) {
+      $account = new Data("account");
+      $result = $account->get_record_by_id($article['account']);
+      $account  = $result['name'];
+      $this->page->title    = "Blogs";
+      $this->page->header   = $article['headline'];
+      $this->page->content .= "<p>\n";
+      $this->page->content .= "<b>" . $account . "</b><br />\n";
+      $this->page->content .= "<u>Date:</u> " . date('F dS Y', strtotime($article['sdate']) ) . "<br />\n";
+      $this->page->content .= "</p>\n";
+      $this->page->content .= "<p>\n";
+      $this->page->content .= nl2br(htmlentity2str($article['story'])) . "<br />\n";
+      $this->page->content .= "</p>\n";
+      $this->page->content .= "<div class=\"graybg small\">\n";
+      if ( $this->account ) {
+        $this->page->content .= "<div class=\"left\">";
+        $this->page->content .= "[ <a href=\"index.php?blogid=" . $article['id'] . "&action=edit\">Edit this story</a> ]";
+        $this->page->content .= "[ <a href=\"index.php?blogid=" . $article['id'] . "&action=delete\">Delete this story</a> ]";
+        $this->page->content .= "</div>\n";
+      }
+      $this->page->content .= "<div class=\"right\">";
+      $this->page->content .= "[ <a href=\"index.php?action=comment&blogid=" . $article['id'] . "\">Add Comment</a> ]";
+      $this->page->content .= "</div>\n";
+      $this->page->content .= "</div>\n";
+      $number_of_comments = $this->cdata->count_records('blog',$article['id']);
+      if ( $number_of_comments > 0 ) {
+        $this->page->content .= "<p>\n";
+        $this->page->content .= "Listing $number_of_comments Comment"; if ( $number_of_comments > 1 ) { $this->page->content .= "s"; } $this->page->content .= "\n";
+        $this->page->content .= "</p>\n";
+        $comments = $this->cdata->get_records_assoc('blog',$article['id'],'parent,cdate');
+        $this->print_comments($comments);
+      }
+    } else {
+      $this->page->content .= "<p>\n";
+      $this->page->content .= "There was no article found.\n";
+      $this->page->content .= "</p>\n";
+    }
+    $this->page->display();
+  }
+
+  function print_comments($array, $id='',$level=0) {
+    $tagsout = 0;
+    foreach ( $array as $key => $val ) {
+      if ( $val['parent'] == $id ) {
+        if ( $tagsout == 0 ) {
+          $this->page->content .= str_repeat("  ", $level) . "  <div class=\"comment\">\n";
+          $tagsout = 1;
+        }
+        $this->page->content .= str_repeat("  ", $level) . "  <div class=\"graybg small\">" . $array[$key]['subject'] . "</b> by ";
+        if ( $array[$key]['name'] && $array[$key]['email']) {
+          $this->page->content .= "<a href=\"mailto:" . $array[$key]['email'] . "\">" . $array[$key]['name'] . "</a>";
+        } elseif ( $array[$key]['name'] ) {
+          $this->page->content .= $array[$key]['name'];
+        } else { 
+          $this->page->content .= "Anonymous";
+        }
+        $this->page->content .= "</div>\n";
+        $this->page->content .= str_repeat("  ", $level) . "  <p>" . htmlentity2str(nl2br($array[$key]['comment'])) . "</p>\n";
+        $this->page->content .= str_repeat("  ", $level) . "  <div class=\"left\">Date: " .date('F dS Y H:i:s', strtotime($array[$key]['cdate']) ) . "</div>\n";
+        $this->page->content .= str_repeat("  ", $level) . "  <div class=\"right\">";
+        if ( $this->account ) {
+          $this->page->content .= "[ <a href=\"index.php?commentid=" . $key . "&action=delete\">Delete this comment</a> ] ";
+        }
+        $this->page->content .= "[ <a href=\"index.php?action=comment&blogid=" . sprintf("%06d",$array[$key]['blog']) . "&parentid=" . $key . "\">Reply</a> ]</div>\n";
+        $this->print_comments($array,$key,$level+1);
+      }
+    }
+    if ( $tagsout == 1 ) {
+      $this->page->content .= str_repeat("  ", $level) . "</div>\n";
+    }
+  }
+
+  function print_blog_form($blog) {
+    if (!$blog['inSdate'])   { $blog['inSdate'] = date("Y-m-d H:i:s"); }
+    if (!$blog['inAccount']) { $blog['inAccount'] = $this->account; }
+    if ($this->error_string) { $this->page->content .= "<p class=\"error\">" . $this->error_string . "</p>\n"; }
+    require_once('Form.class');
+    $form = new Form('index.php','post');
+    $form->hidden('action',$blog['action']);
+    $form->hidden('inBlogid',$blog['inBlogid']);
+    $form->hidden('inAccount',$blog['inAccount']);
+    $form->text('Date','inSdate',$blog['inSdate'],60,40,1);
+    $form->text('Headline','inHeadline',$blog['inHeadline'],60,255,1);
+    $form->textarea('Story','inStory',htmlentity2str($blog['inStory']),30,80,1);
+    $form->submit('submit',ucwords($blog['action']));
+    $form->submit('submit','Cancel');
+    $this->page->content .= $form->render();
+    $this->page->display();
+  }
+
+  function print_comment_form($comment) {
+    if (!$comment['inCdate']) { $comment['inCdate']   = date("Y-m-d H:i:s"); }
+    if ($this->error_string)  { $this->page->content .= "<p class=\"error\">" . $this->error_string . "</p>\n"; }
+    $blog = $this->bdata->get_record_by_id($comment['inBlogid']);
+    $this->page->content .= "<p>\n";
+    $this->page->content .= "Please leave a comment on the article entitled: \"" . $blog['headline'] . "\"\n";
+    $this->page->content .= "</p>\n";
+    require_once('Form.class');
+    $form = new Form('index.php','post');
+    $form->hidden('action','comment');
+    $form->hidden('inBlogid',$comment['inBlogid']);
+    $form->hidden('inParentid',$comment['inParentid']);
+    $form->hidden('inCdate',$comment['inCdate']);
+    $form->text('Name','inName',$comment['inName'],60,255);
+    $form->text('Email','inEmail',$comment['inEmail'],60,255);
+    $form->text('Subject','inSubject',$comment['inSubject'],60,255,1);
+    $form->textarea('Comment','inComment',$comment['inComment'],30,80,1);
+    $form->captcha(1);
+    $form->submit('submit','Add Comment');
+    $form->submit('submit','Cancel');
+    $this->page->content .= $form->render();
+    $this->page->display();
+  }
+
+  function print_blog_delete_confirmation($blog) {
+    $this->page->title       = "Confirm Deletion";
+    $this->page->description = "Please confirm the deletion.";
+    $this->page->content .= "<p class=\"error\">\n";
+    $this->page->content .= "<b>Warning!</b> You are about to delete the article entitled:<br /><br />\n";
+    $this->page->content .= "\"" . $blog['headline'] . "\"<br /><br />\n";
+    $this->page->content .= "Click 'Delete' again if you are sure.\n";
+    $this->page->content .= "</p>\n";
+    require_once('Form.class');
+    $form = new Form('index.php','post');
+    $form->hidden('action','delete');
+    $form->hidden('inBlogid',$blog['id']);
+    $form->submit('submit','Delete');
+    $form->submit('submit','Cancel');
+    $this->page->content .= $form->render();
+    $this->page->display();
+  }
+
+  function print_comment_delete_confirmation($comment) {
+    $this->page->title       = "Confirm Deletion";
+    $this->page->description = "Please confirm the deletion.";
+    $this->page->content .= "<p class=\"error\">\n";
+    $this->page->content .= "<b>Warning!</b> You are about to delete the comment entitled:<br /><br />\n";
+    $this->page->content .= "\"" . $comment['subject'] . "\"<br /><br />\n";
+    $this->page->content .= "Click 'Delete' again if you are sure.\n";
+    $this->page->content .= "</p>\n";
+    require_once('Form.class');
+    $form = new Form('index.php','post');
+    $form->hidden('action','delete');
+    $form->hidden('inBlogid',$comment['blog']);
+    $form->hidden('inCommentid',$comment['id']);
+    $form->submit('submit','Delete');
+    $form->submit('submit','Cancel');
+    $this->page->content .= $form->render();
+    $this->page->display();
+  }
+
+  function delete_comment_by_id($commentid) {
+    $children = $this->cdata->get_records('parent',$commentid);
+    if ( is_array($children) && count($children) > 0 ) {
+      $sql = "UPDATE comment SET name=NULL,email=NULL,subject='Comment Deleted',comment='This comment was deleted by the moderator.' WHERE id=$commentid";
+      $this->cdata->db->execute($sql);
+    } else {
+      $this->cdata->delete_record_by_id($commentid);
+    }
+    return true;
+  }
+
+  function run() {
+
+    if ( $_SERVER["REQUEST_METHOD"] == 'POST' ) {
+
+      if ( $_POST['submit'] == 'Cancel' )  { redirect('./'.$_POST['inBlogid']); }
+
+      if ( $_POST['action'] == 'comment' && ereg("^[0-9]{6}$",$_POST['inBlogid'])  ) {
+
+        if ( !isset($_SESSION['inCaptcha']) || $_SESSION['inCaptcha'] == '' || $_SESSION['inCaptcha'] != $_POST['inCaptcha'] ) {
+          $this->page->menu    = array();
+          $this->page->relfile = $this->page->reluri . $_POST['inBlogid'];
+          $this->error_string  = "You must enter the numbers in the image to comment.\n";
+          $this->print_comment_form($_POST);
+        }
+
+        if ( $_POST['inSubject'] && $_POST['inComment'] ) {
+
+          $this->cdata->set_attribute('blog', $_POST['inBlogid']);
+          if ($_POST['inParentid'] == '') {
+            $this->cdata->set_attribute('parent', 'NULL');
+          } else {
+            $this->cdata->set_attribute('parent', $_POST['inParentid']);
+          }
+          $this->cdata->set_attribute('name', $_POST['inName']);
+          $this->cdata->set_attribute('email', $_POST['inEmail']);
+          $this->cdata->set_attribute('cdate', $_POST['inCdate']);
+          $this->cdata->set_attribute('subject', $_POST['inSubject']);
+          $this->cdata->set_attribute('comment', $_POST['inComment']);
+          if ( $this->cdata->save() ) {
+            redirect('./'.$_POST['inBlogid']);
+          } else {
+            $this->page->title   = "An Error Occurred!";
+            $this->page->title   = "An error occurred when trying to save a comment.";
+            $this->page->content = "Unable to save comment!";
+            $this->page->display();
+          }
+
+        } else {
+
+          $this->page->menu    = array();
+          $this->page->relfile = $this->page->reluri . $_POST['inBlogid'];
+          $this->error_string  = "You must provide input for at least the subject and comment fields!\n";
+          $this->print_comment_form($_POST);
+
+        }
+
+      }
+
+      if ( $_POST['action'] == 'delete' && ereg("^[0-9]{6}$",$_POST['inBlogid']) ) {
+
+        if ( $this->bdata->delete_record_by_id($_POST['inBlogid']) && $this->cdata->delete_records('blog',$_POST['inBlogid']) ) {
+          redirect('./');
+        } else {
+          $this->page->title   = "An Error Occurred!";
+          $this->page->title   = "An error occurred when trying to delete an article.";
+          $this->page->content = "Unable to delete article!";
+          $this->page->display();
+        }
+
+      } elseif ( $_POST['action'] == 'delete' && ereg("^[0-9]{6}$",$_POST['inCommentid']) ) {
+
+        if ( $this->delete_comment_by_id($_POST['inCommentid']) ) {
+          redirect('./'.sprintf("%06d",$_POST['inBlogid']));
+        } else {
+          $this->page->title   = "An Error Occurred!";
+          $this->page->title   = "An error occurred when trying to delete a comment.";
+          $this->page->content = "Unable to delete comment!";
+          $this->page->display();
+        }
+
+      } elseif ( $_POST['action'] == 'edit' || $_POST['action'] == 'add' ) {
+
+        if ( $_POST['inAccount'] && $_POST['inSdate'] && $_POST['inHeadline'] && $_POST['inStory'] ) {
+
+          $this->bdata->set_attribute('id', $_POST['inBlogid']);
+          $this->bdata->set_attribute('account', $_POST['inAccount']);
+          $this->bdata->set_attribute('sdate', $_POST['inSdate']);
+          $this->bdata->set_attribute('headline', $_POST['inHeadline']);
+          $this->bdata->set_attribute('story', htmlentity2str($_POST['inStory']));
+          if ( $this->bdata->save() ) {
+            redirect('./'.$_POST['inBlogid']);
+          } else {
+            $this->page->title   = "An Error Occurred!";
+            $this->page->title   = "An error occurred when trying to save an article.";
+            $this->page->content = "Unable to save article!";
+            $this->page->display();
+          }
+  
+        } else {
+
+          $this->page->title       = "Edit this story";
+          $this->page->description = "Please edit this story.";
+          $this->page->menu = array();
+          $this->page->relfile = $this->page->reluri . $_POST['inBlogid'];
+          $this->error_string = "You must provide input for each field!\n";
+          $this->print_blog_form($_POST);
+
+        }
+
+      }
+
+    } elseif ( $_GET['action'] == 'delete' && ereg("^[0-9]{6}$",$_GET['blogid']) && $this->account ) {
+
+      $this->page->menu = array();
+      $this->page->relfile = $this->page->reluri . $_GET['blogid'];
+      $article = $this->bdata->get_record_by_id($_GET['blogid']);
+      $this->print_blog_delete_confirmation($article);
+
+    } elseif ( $_GET['action'] == 'delete' && ereg("^[0-9]{6}$",$_GET['commentid']) && $this->account ) {
+
+      $this->page->menu = array();
+      $this->page->relfile = $this->page->reluri;
+      $comment = $this->cdata->get_record_by_id($_GET['commentid']);
+      $this->print_comment_delete_confirmation($comment);
+
+    } elseif ( $_GET['action'] == 'comment' && ereg("^[0-9]{6}$",$_GET['blogid']) ) {
+
+      $p['inBlogid'] = $_GET['blogid'];
+      $p['inParentid'] = $_GET['parentid'];
+      $this->page->menu = array();
+      $this->page->relfile = $this->page->reluri . $_GET['blogid'];
+      $this->print_comment_form($p);
+
+    } elseif ( $_GET['action'] == 'add' || $_GET['action'] == 'edit' ) {
+
+      if ( $_GET['action'] == 'add' ) {
+        $page_title       = "Add a story";
+        $page_description = "Please add a story.";
+      } else {
+        $page_title       = "Edit this story";
+        $page_description = "Please edit this story.";
+      }
+      $p = array();
+      if ($_GET['blogid']) {
+        list($p['inBlogid'], $p['inAccount'], $p['inSdate'], $p['inHeadline'], $p['inStory']) = array_values($this->bdata->get_record_by_id($_GET['blogid']));
+      }
+      $p['action'] = $_GET['action'];
+      $this->page->menu = array();
+      if ($_GET['blogid']) {
+        $this->page->relfile = $this->page->reluri . $_GET['blogid'];
+      } else {
+        $this->page->relfile = 'index.php';
+      }
+      $this->print_blog_form($p);
+
+    } elseif (!$_GET['action']) {
+
+      if (ereg("^[0-9]{6}$",$_GET['blogid'])) {
+
+        $this->page->relfile = $this->page->reluri . $_GET['blogid'];
+        $article = $this->bdata->get_record_by_id($_GET['blogid']);
+        $this->print_article($article);
+
+      } else {
+
+        if ( $_GET['page'] != "" ) {
+          $this->page->relfile = "./";
+        }
+        $this->print_articles($_GET['page']);
+
+      }
+
+    } else {
+
+      $this->page->title       = "I'm really confused.";
+      $this->page->description = "Something very strange is going on...";
+      $this->page->content     = "<P>I got nothin here, Buddy... Do really you know what you are looking for?</P>\n";
+      $this->page->display();
+    }
+
+  }
+
+}
+
+?>

@@ -1,0 +1,274 @@
+<?
+/*
+##################################################
+#
+# Filename..........: $RCSfile: Form.class,v $
+# Original Author...: Anthony L. Awtrey
+# Version...........: $Revision: 0.1 $
+# Last Modified By..: $Author: aawtrey $
+# Last Modified.....: $Date: 2006/09/21 18:15:56 $
+#
+# Copyright 2006 Anthony Awtrey
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+*/
+
+/*
+ * This class provides methods to build HTML forms.
+ */
+class Form {
+
+  var $action;
+  var $method;
+  var $hidden = array();
+  var $input  = array();
+  var $submit = array();
+  var $reset;
+
+  /*
+   * Class initialization
+   */
+  function Form($action='index.php', $method='GET') {
+    global $_SERVER;
+    global $_SESSION;
+    global $_REQUEST;
+    global $_POST;
+    global $_GET;
+    $this->action = $action;
+    $this->method = $method;
+  }
+
+  /*
+   * Add a hidden form input
+   */
+  function hidden($name,$value) {
+    $c = count($this->hidden);
+    $this->hidden[$c]['name']      = $name;
+    $this->hidden[$c]['value']     = $value;
+  }
+
+  /*
+   * Add a text form input
+   */
+  function text($label,$name,$value,$size='30',$maxlength='') {
+    $c = count($this->input);
+    $this->input[$c]['type']      = 'text';
+    $this->input[$c]['label']     = $label;
+    $this->input[$c]['name']      = $name;
+    $this->input[$c]['value']     = $value;
+    $this->input[$c]['size']      = $size;
+    if ( $maxlength == '' ) {
+      $this->input[$c]['maxlength'] = $size;
+    } else {
+      $this->input[$c]['maxlength'] = $maxlength;
+    }
+  }
+
+  /*
+   * Add a password form input
+   */
+  function password($label,$name,$value,$size='30',$maxlength='') {
+    $c = count($this->input);
+    $this->input[$c]['type']      = 'password';
+    $this->input[$c]['label']     = $label;
+    $this->input[$c]['name']      = $name;
+    $this->input[$c]['value']     = $value;
+    $this->input[$c]['size']      = $size;
+    if ( $maxlength == '' ) {
+      $this->input[$c]['maxlength'] = $size;
+    } else {
+      $this->input[$c]['maxlength'] = $maxlength;
+    }
+  }
+
+  /*
+   * Add a file form input
+   */
+  function file($label,$name,$value,$size='30',$maxlength='') {
+    $c = count($this->input);
+    $this->input[$c]['type']      = 'file';
+    $this->input[$c]['label']     = $label;
+    $this->input[$c]['name']      = $name;
+    $this->input[$c]['value']     = $value;
+    $this->input[$c]['size']      = $size;
+    if ( $maxlength == '' ) {
+      $this->input[$c]['maxlength'] = $size;
+    } else {
+      $this->input[$c]['maxlength'] = $maxlength;
+    }
+  }
+
+  /*
+   * Add a textarea form input
+   */
+  function textarea($label,$name,$value,$rows='5',$cols='60') {
+    $c = count($this->input);
+    $this->input[$c]['type']      = 'textarea';
+    $this->input[$c]['label']     = $label;
+    $this->input[$c]['name']      = $name;
+    $this->input[$c]['value']     = $value;
+    $this->input[$c]['rows']      = $rows;
+    $this->input[$c]['cols']      = $cols;
+  }
+
+  /*
+   * Add a select form input
+   * $options must be a key/value array
+   */
+  function select($label,$name,$options,$selected='',$size='1') {
+    $c = count($this->input);
+    $this->input[$c]['type']      = 'select';
+    $this->input[$c]['label']     = $label;
+    $this->input[$c]['name']      = $name;
+    $this->input[$c]['options']   = $options;
+    $this->input[$c]['selected']  = $selected;
+    $this->input[$c]['size']      = $size;
+  }
+
+  /*
+   * Add a captcha form input. This is an input test used to prevent spam.
+   */
+  function captcha() {
+    $c = count($this->input);
+    $this->input[$c]['type']      = 'captcha';
+  }
+
+  /*
+   * Add a submit button
+   */
+  function submit($name,$value) {
+    $c = count($this->submit);
+    $this->submit[$c]['name']     = $name;
+    $this->submit[$c]['value']    = $value;
+  }
+
+  /*
+   * Add a reset button
+   */
+  function reset($name) {
+    $this->reset = $name;
+  }
+
+  /*
+   * Generate a captcha image for the form and set it to the session
+   */
+  function generateCaptcha() {
+    $image    = imagecreate(100, 30);
+    $white    = imagecolorallocate($image, 0xFF, 0xFF, 0xFF);
+    $gray     = imagecolorallocate($image, 0xC0, 0xC0, 0xC0);
+    $darkgray = imagecolorallocate($image, 0x50, 0x50, 0x50);
+    srand((double)microtime()*1000000);
+    for ($i = 0; $i < 30; $i++) {
+      $x1 = rand(0,100);
+      $y1 = rand(0,30);
+      $x2 = rand(0,100);
+      $y2 = rand(0,30);
+      imageline($image, $x1, $y1, $x2, $y2 , $gray);
+    }
+    for ($i = 0; $i < 5; $i++) {
+      $cnum[$i] = rand(0,9);
+    }
+    for ($i = 0; $i < 5; $i++) {
+      $fnt = rand(3,5);
+      $x = $x + rand(12 , 20);
+      $y = rand(7 , 12);
+      imagestring($image, $fnt, $x, $y, $cnum[$i] , $darkgray);
+    }
+    $digit = "$cnum[0]$cnum[1]$cnum[2]$cnum[3]$cnum[4]";
+    $_SESSION['inCaptcha'] = $digit;
+    header('Content-type: image/png');
+    imagepng($image);
+    imagedestroy($image);
+    exit;
+  }
+
+  /*
+   * Render the defined form into HTML
+   */
+  function render() {
+    $output = "<form action=\"" . $this->action . "\" method=\"" . $this->method . "\" enctype=\"multipart/form-data\">\n";
+    while ( list($key,$val) = each($this->hidden) ) {
+      $output .= "<input type=\"hidden\" name=\"" . $val['name'] . "\" value=\"" . $val['value'] . "\" />\n";
+    }
+    $output .= "<div class=\"form\">\n";
+    while ( list($key,$val) = each($this->input) ) {
+      switch ($val['type']) {
+        case 'text':
+          $output .= "  <div class=\"row\">\n";
+          $output .= "    <span class=\"left\">" . $val['label'] . ":</span>\n";
+          $output .= "    <span class=\"right\"><input type=\"text\" name=\"" . $val['name'] . "\" value=\"" . $val['value'] . "\" size=\"" . $val['size'] . "\" maxlength=\"" . $val['maxlength'] . "\" /></span>\n";
+          $output .= "  </div>\n";
+          break;
+        case 'password':
+          $output .= "  <div class=\"row\">\n";
+          $output .= "    <span class=\"left\">" . $val['label'] . ":</span>\n";
+          $output .= "    <span class=\"right\"><input type=\"password\" name=\"" . $val['name'] . "\" value=\"" . $val['value'] . "\" size=\"" . $val['size'] . "\" maxlength=\"" . $val['maxlength'] . "\" /></span>\n";
+          $output .= "  </div>\n";
+          break;
+        case 'file':
+          $output .= "  <div class=\"row\">\n";
+          $output .= "    <span class=\"left\">" . $val['label'] . ":</span>\n";
+          $output .= "    <span class=\"right\"><input type=\"file\" name=\"" . $val['name'] . "\" value=\"" . $val['value'] . "\" size=\"" . $val['size'] . "\" maxlength=\"" . $val['maxlength'] . "\" /></span>\n";
+          $output .= "  </div>\n";
+          break;
+        case 'textarea':
+          $output .= "  <div class=\"row\">\n";
+          $output .= "    <span class=\"left\">" . $val['label'] . ":</span>\n";
+          $output .= "    <span class=\"right\"><textarea name=\"" . $val['name'] . "\" rows=\"" . $val['rows'] . "\" cols=\"" . $val['cols'] . "\">\n" .  $val['value'] . "\n</textarea></span>\n";
+          $output .= "  </div>\n";
+          break;
+        case 'select':
+          $output .= "  <div class=\"row\">\n";
+          $output .= "    <span class=\"left\">" . $val['label'] . ":</span>\n";
+          $output .= "    <span class=\"right\"><select name=\"" . $val['name'] . "\" size=\"" . $val['size'] . "\">\n";
+          foreach ( $val['options'] as $k => $v) {
+            $selected = '';
+            if ( $k == $val['selected'] ) {
+              $selected = 'SELECTED';
+            }
+            $output .= "      <option value=\"". $k . "\" " . $selected . ">" . $v . "</option>\n";
+          }
+          $output .= "    </select></span>\n";
+          $output .= "  </div>\n";
+          break;
+        case 'captcha':
+          $output .= "  <div class=\"row\">\n";
+          $output .= "    <span class=\"left\">Enter numbers:</span>\n";
+          $output .= "    <span class=\"right\"><img align=\"middle\" src=\"".RELPATH."common/captcha.php\"><input type=\"text\" name=\"inCaptcha\" value=\"\" size=\"5\" maxlength=\"5\" /></span>\n";
+          $output .= "  </div>\n";
+          break;
+        default:
+          break;
+      }
+    }
+    $output .= "  <div class=\"row\">\n";
+    $output .= "    <span class=\"left\">&nbsp;</span>\n";
+    $output .= "    <span class=\"right\">";
+    while ( list($key,$val) = each($this->submit) ) {
+      $output .= "<input type=\"submit\" name=\"" . $val['name'] . "\" value=\"" . $val['value'] . "\" />";
+    }
+    if ( $this->reset ) {
+      $output .= "<input type=\"reset\" value=\"" . $this->reset . "\">";
+    }
+    $output .= "</span>\n";
+    $output .= "  </div>\n";
+    $output .= "</div>\n";
+    $output .= "</form>\n";
+    return $output;
+  }
+
+}
+?>

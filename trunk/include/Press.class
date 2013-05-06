@@ -1,0 +1,242 @@
+<?
+/*
+##################################################
+#
+# $RCSfile: Press.class,v $
+# Original Author...: Anthony L. Awtrey
+# Version...........: $Revision: 1.3 $
+# Last Modified By..: $Author: aawtrey $
+# Last Modified.....: $Date: 2005/04/20 21:38:09 $
+#
+# Copyright 2005 Anthony L. Awtrey
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
+#
+*/
+
+class Press {
+
+  var $page;
+  var $data;
+  var $error_string;
+
+  /*
+   * Class initialization
+   */
+  function Press() {
+    global $_SERVER;
+    global $_SESSION;
+    global $_REQUEST;
+    global $_POST;
+    global $_GET;
+    $this->page              = new Page();
+    $this->page->title       = "In the Press";
+    $this->page->description = "This is the press center for Tony and Hala Awtrey.";
+    $this->data              = new Data("press");
+  }
+
+  function print_articles($articles) {
+    $article_count = $this->data->count_records();
+    $this->page->content .= "<p>\n";
+    if ($_GET['year']) {
+      $this->page->content .= "There are " . count($articles) . " articles from " . $_GET['year'] . " out of $article_count articles total.\n";
+    } else {
+      $this->page->content .= "Anthony has been lucky enough to be called on to provide subject\n";
+      $this->page->content .= "matter quotes for publications on a number of topics. Here are\n";
+      $this->page->content .= "the most recent " . count($articles) . " of $article_count total articles.\n";
+    }
+    $this->page->content .= "</p>\n";
+    while ( list($key,$val) = each($articles) ) {
+      $this->page->content .= "<P>\n";
+      $this->page->content .= "<b>" . $val['headline'] . "</b><br />\n";
+      $this->page->content .= "<u>Date:</u> " . date('F dS Y', strtotime($val['sdate']) ) . "<br />\n";
+      $this->page->content .= "<u>Reporter:</u> " . $val['reporter'] . "<br />\n";
+      $this->page->content .= "<a href=\"" . $val['link'] . "\">Original Link</a><br />\n";
+      $this->page->content .= truncate_string($val['story']) . " ... \n";
+      $this->page->content .= "<a href=\"" . $val['id'] . "\">Read More</a><br />\n";
+      $this->page->content .= "</P>\n";
+    }
+    if ( $_SESSION['login'] ) {
+      $this->page->content .= "<p>\n";
+      $this->page->content .= "<a href=\"index.php?action=add\">Add a story</a>\n";
+      $this->page->content .= "</p>\n";
+    }
+    $this->page->display();
+  }
+
+  function print_article($a) {
+    $this->page->content .= "<p>\n";
+    $this->page->content .= "<U>" . $a['headline'] . "</u><br />\n";
+    $this->page->content .= "Reporter: " . $a['reporter'] . "\n";
+    $this->page->content .= "Date: " . date('F dS Y', strtotime($a['sdate']) ) . "<br />\n";
+    $this->page->content .= "<a href=\"" . $a['link'] . "\">Original Link</a><br />\n";
+    $this->page->content .= "</p>\n";
+  
+    $this->page->content .= "<P>\n";
+    $this->page->content .= nl2br($a['story']) . "<br />\n";
+    $this->page->content .= "</p>\n";
+    if ( $_SESSION['login'] ) {
+      $this->page->content .= "<p>\n";
+      $this->page->content .= "<a href=\"index.php?id=" . $a['id'] . "&action=edit\">Edit this story</a>\n";
+      $this->page->content .= "<a href=\"index.php?id=" . $a['id'] . "&action=delete\">Delete this story</a>\n";
+      $this->page->content .= "</p>\n";
+    }
+    $this->page->display();
+  }
+
+  function print_article_form($a) {
+    $this->page->title       = ucwords($a['action']) . " This Story";
+    $this->page->description = ucwords($a['action']) . "ing a story.";
+    if ( ! $_SESSION['login'] ) { redirect($a['inId']); }
+    if (!$a['inSdate'])   { $a['inSdate'] = date("Y-m-d H:i:s"); }
+    if (!$a['inAccount']) { $a['inAccount'] = $_SESSION['login']; }
+    if ($this->error_string) { $page->content .= "<p class=\"error\">" . $this->error_string . "</p>\n"; }
+    require_once('Form.class');
+    $form = new Form('index.php','post');
+    $form->hidden('action',$a['action']);
+    $form->hidden('inId',$a['inId']);
+    $form->hidden('inAccount',$a['inAccount']);
+    $form->text('Date','inSdate',$a['inSdate'],60,40);
+    $form->text('Headline','inHeadline',$a['inHeadline'],60,255);
+    $form->text('Reporter','inReporter',$a['inReporter'],60,255);
+    $form->text('Link','inLink',$a['inLink'],60,255);
+    $form->textarea('Story','inStory',$a['inStory'],30,80);
+    $form->submit('submit',ucwords($a['action']));
+    $form->submit('submit','Cancel');
+    $this->page->content .= $form->render();
+    $this->page->display();
+  }
+
+  function print_article_delete_confirmation($a) {
+    $this->page->title       = "Confirm Deletion";
+    $this->page->description = "Please confirm the deletion.";
+    $this->page->content .= "<p class=\"error\">\n";
+    $this->page->content .= "<b>Warning!</b> You are about to delete the article entitled:<br /><br />\n";
+    $this->page->content .= "\"" . $a['headline'] . "\"<br /><br />\n";
+    $this->page->content .= "Click 'Delete' again if you are sure.\n";
+    $this->page->content .= "</p>\n";
+    require_once('Form.class');
+    $form = new Form('index.php','post');
+    $form->hidden('action','delete');
+    $form->hidden('inId',$a['id']);
+    $form->submit('submit','Delete');
+    $form->submit('submit','Cancel');
+    $this->page->content .= $form->render();
+    $this->page->display();
+  }
+
+  function run() {
+
+    if ( $_SERVER["REQUEST_METHOD"] == 'POST' ) {
+
+      if ( $_POST['submit'] == 'Cancel' )  { redirect($_POST['inId']); }
+
+      if ( ! $_SESSION['login'] ) { redirect($_POST['inId']); }
+
+      if ( $_POST['action'] == 'delete' && ereg("^[0-9]{6}$",$_POST['inId']) ) {
+
+        if ( $this->data->delete_record_by_id($_POST['inId']) ) {
+          redirect('./');
+        } else {
+          $this->page->title   = "An Error Occurred!";
+          $this->page->title   = "An error occurred when trying to delete an article.";
+          $this->page->content = "Unable to delete article!";
+          $this->page->display();
+        }
+
+      } elseif ( $_POST['action'] == 'add' || $_POST['action'] == 'edit' ) {
+
+        if ( $_POST['inAccount'] && $_POST['inSdate'] && $_POST['inHeadline'] && $_POST['inReporter'] && $_POST['inLink'] && $_POST['inStory']) {
+          $this->data->set_attribute('id', $_POST['inId']);
+          $this->data->set_attribute('account', $_POST['inAccount']);
+          $this->data->set_attribute('sdate', $_POST['inSdate']);
+          $this->data->set_attribute('headline', $_POST['inHeadline']);
+          $this->data->set_attribute('reporter', $_POST['inReporter']);
+          $this->data->set_attribute('link', $_POST['inLink']);
+          $this->data->set_attribute('story', $_POST['inStory']);
+          if ( $this->data->save() ) {
+            redirect("./".$_POST['$inId']);
+          } else {
+            $this->page->title   = "An Error Occurred!";
+            $this->page->title   = "An error occurred when trying to save a comment.";
+            $this->page->content = "Unable to save article!";
+            $this->page->display();
+          }
+        } else {
+          $this->error_string = "You must provide input for each field!\n";
+          $this->print_article_form($_POST);
+        }
+
+      }
+
+    } elseif ( $_GET['action'] == 'delete' && ereg("^[0-9]{6}$",$_GET['id']) ) {
+
+      if ( ! $_SESSION['login'] ) { redirect("./".$_GET['id']); }
+
+      $this->page->menu = array();
+      $this->page->relfile = $this->page->reluri . $_GET['id'];
+      $article = $this->data->get_record_by_id($_GET['id']);
+      $this->print_article_delete_confirmation($article);
+
+    } elseif ( $_GET['action'] == 'add' || $_GET['action'] == 'edit' ) {
+
+      if ( ! $_SESSION['login'] ) { redirect('./'); }
+
+      if ( $article['action'] == 'add' ) {
+        $this->page->title       = "Add a story";
+        $this->page->description = "Please add a story.";
+      } else {
+        $this->page->title       = "Edit this story";
+        $this->page->description = "Please edit this story.";
+      }
+      $p = array();
+      if ($_GET['id']) {
+        list($p['inId'], $p['inAccount'], $p['inSdate'], $p['inHeadline'], $p['inReporter'], $p['inLink'], $p['inStory']) = array_values($this->data->get_record_by_id($_GET['id']));
+      }
+      $p['action'] = $_GET['action'];
+      $this->print_article_form($p);
+
+    } elseif (!$_GET['action']) {
+
+      if (ereg("^[0-9]{6}$",$_GET['id'])) {
+
+        $article  = $this->data->get_record_by_id($_GET['id']);
+        $this->print_article($article);
+
+      } elseif  (ereg("^[0-9]{4}$",$_GET['year'])) {
+
+        $articles = $this->data->get_records_by_year("sdate",$_GET['year']);
+        $this->print_articles($articles);
+
+      } else {
+
+        $articles = $this->data->get_records("","","sdate DESC LIMIT 10");
+        $this->print_articles($articles);
+
+      }
+
+    } else {
+
+      $this->page->title       = "I'm really confused.";
+      $this->page->description = "Something very strange is going on...";
+      $this->page->content     = "<P>I got nothin here, Buddy... Do really you know what you are looking for?</P>\n";
+      $this->page->display();
+
+    }
+
+  }
+
+}
+?>

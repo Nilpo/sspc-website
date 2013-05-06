@@ -1,0 +1,265 @@
+<?
+/*
+##################################################
+#
+# $RCSfile: Album.class,v $
+# Original Author...: Anthony L. Awtrey
+# Version...........: $Revision: 1.6 $
+# Last Modified By..: $Author: aawtrey $
+# Last Modified.....: $Date: 2005/05/27 01:30:22 $
+#
+# Copyright 2005 Anthony L. Awtrey
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
+#
+*/
+
+class Album {
+
+  var $page;
+  var $thumbnail_directory = 'thumbnails';
+  var $details = array();
+  var $months = array(
+    '01' => 'January',
+    '02' => 'February',
+    '03' => 'March',
+    '04' => 'April',
+    '05' => 'May',
+    '06' => 'June',
+    '07' => 'July',
+    '08' => 'August',
+    '09' => 'September',
+    '10' => 'October',
+    '11' => 'November',
+    '12' => 'December'
+  );
+  var $days = array(
+    '01' => '1<sup><small>st</small></sup>',
+    '02' => '2<sup><small>nd</small></sup>',
+    '03' => '3<sup><small>rd</small></sup>',
+    '04' => '4<sup><small>th</small></sup>',
+    '05' => '5<sup><small>th</small></sup>',
+    '06' => '6<sup><small>th</small></sup>',
+    '07' => '7<sup><small>th</small></sup>',
+    '08' => '8<sup><small>th</small></sup>',
+    '09' => '9<sup><small>th</small></sup>',
+    '10' => '10<sup><small>th</small></sup>',
+    '11' => '11<sup><small>th</small></sup>',
+    '12' => '12<sup><small>th</small></sup>',
+    '13' => '13<sup><small>th</small></sup>',
+    '14' => '14<sup><small>th</small></sup>',
+    '15' => '15<sup><small>th</small></sup>',
+    '16' => '16<sup><small>th</small></sup>',
+    '17' => '17<sup><small>th</small></sup>',
+    '18' => '18<sup><small>th</small></sup>',
+    '19' => '19<sup><small>th</small></sup>',
+    '20' => '20<sup><small>th</small></sup>',
+    '21' => '21<sup><small>st</small></sup>',
+    '22' => '22<sup><small>nd</small></sup>',
+    '23' => '23<sup><small>rd</small></sup>',
+    '24' => '24<sup><small>th</small></sup>',
+    '25' => '25<sup><small>th</small></sup>',
+    '26' => '26<sup><small>th</small></sup>',
+    '27' => '27<sup><small>th</small></sup>',
+    '28' => '28<sup><small>th</small></sup>',
+    '29' => '29<sup><small>th</small></sup>',
+    '30' => '30<sup><small>th</small></sup>',
+    '31' => '31<sup><small>st</small></sup>',
+  );
+
+  /*
+   * Class initialization
+   */
+  function Album() {
+    global $_SERVER;
+    global $_SESSION;
+    global $_SERVER;
+    global $_POST;
+    global $_GET;
+    $this->page              = new Page();
+    $this->page->title       = "Photo Album Viewer";
+    $this->page->header      = "Photo Albums";
+    $this->page->description = "This is a simple photo album viewer.";
+    $this->page->template    = "noprimary.tpl";
+    umask(0002);
+  }
+
+  function get_date_string($year,$month,$day) {
+    $date_string = "";
+    if ( $month != '00' ) {
+      $date_string .= $this->months[$month] . " ";
+      if ( $day != '00' ) {
+        $date_string .= $this->days[$day] . ", ";
+      }
+    }
+    $date_string .= $year;
+    return($date_string);
+  }
+
+  function print_directory_list($dir) {
+    if ( ! is_dir($dir) ) { return false; }
+    if ( $dh = @opendir($dir) ) {
+      while( $entry = readdir($dh) ) {
+        if ( is_dir($entry) &&  ereg("([[:digit:]]{4})-([[:digit:]]{2})-([[:digit:]]{2})_(.*)",$entry,$r) ) {
+          $array[$entry] = $r[1] . $r[2] . $r[3];
+        }
+      }
+      closedir($dh);
+    }
+    arsort($array,SORT_NUMERIC);
+    reset($array);
+    $this->page->content  = "<p>\n";
+    $this->page->content .= $this->page->description . "\n";
+    $this->page->content .= "</p>\n";
+    while ( list($key,$val) = each($array) ) {
+      $name  = ereg_replace("_"," ",ereg_replace("[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}_","",$key));
+      $this->page->content .= "<p>\n";
+      $this->page->content .= "<a href=\"index.php?show_dir=" . urlencode($key) . "\">" . $name . "</a><br />\n";
+      $this->page->content .= "<u>Date:</u> ";
+      $this->page->content .= $this->get_date_string( substr($val, 0, 4), substr($val, 4, 2), substr($val, 6, 2) );
+      $this->page->content .= "<br />\n";
+      if ( $this->details[$key] ) {
+        $this->page->content .= $this->details[$key] . "\n";
+      }
+      $this->page->content .= "</p>\n";
+    }
+    $this->page->display();
+  }
+
+  function show_dir($dir) {
+    $this->page->title = ereg_replace("_"," ",ereg_replace("[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}_","",$dir));
+    $this->page->header = $this->get_date_string( substr($dir, 0, 4), substr($dir, 5, 2), substr($dir, 8, 2) );
+    $this->page->head  = <<<EOF
+<script type="text/javascript" src="[RELPATH]js/prototype.js"></script>
+<script type="text/javascript" src="[RELPATH]js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="[RELPATH]js/lightbox.js"></script>
+<link rel="stylesheet" href="[RELPATH]css/lightbox.css" type="text/css" media="screen" />
+EOF;
+    $this->page->relfile = './';
+    if ( $this->details[$dir] ) {
+      $this->page->content  = "<p>\n";
+      $this->page->content .= $this->details[$dir] . "\n";
+      $this->page->content .= "</p>\n";
+    }
+    $dir = stripslashes($dir);
+    $dh=opendir($dir);
+    while ($file = readdir($dh)) {
+      if ( eregi("\.jpe?g$",$file) ) {
+        $files[] = $file;
+      }
+    }
+    closedir($dh);
+    sort($files);
+    for ( $i=0; $i<count($files); $i++ ) {
+      $pfile = $dir . '/' . $files[$i];
+      $tfile = $dir . '/' . $this->thumbnail_directory . '/' . $files[$i];
+      if ( ! file_exists($tfile) ) {
+        $this->thumbnail($files[$i],$dir);
+      }
+      $this->page->content .= "<a rel=\"lightbox[pics]\" href=\"". $pfile ."\"><img src=\"" . $tfile . "\"></a>\n";
+      if ( ($i+1) % 3 == 0 ) { $this->page->content .= "<br>\n"; }
+    }
+    $this->page->display();
+  }
+
+  function show_image($image,$dir) {
+    $this->page->template = 'blank';
+    $this->page->content  = "<html>\n";
+    $this->page->content .= "<head>\n";
+    $this->page->content .= "<title>" . ereg_replace("_"," ",ereg_replace("[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}_","",$dir)) . "</title>\n";
+    $this->page->content .= "</head>\n";
+    $this->page->content .= "<body>\n";
+    $this->page->content .= "<img src=\"" . $dir . '/' . $image . "\">\n";
+    if ( $_SESSION['login'] ) {
+      require_once('Form.class');
+      $form = new Form('index.php','post');
+      $form->hidden('dir',$dir);
+      $form->hidden('image',$image);
+      $form->submit('rotate','Rotate Clockwise');
+      $form->submit('rotate','Rotate Counter Clockwise');
+      $this->page->content .= $form->render();
+    }
+    $this->page->content .= "</body>\n";
+    $this->page->content .= "</html>\n";
+    $this->page->display();
+  }
+
+  function thumbnail ($image, $dir, $dst_width='200') {
+    if ( ! is_dir($dir) ) { return false; }
+    if ( ! is_readable($dir . '/' . $image) ) { return false; }
+    $thumbdir = $dir . '/' . $this->thumbnail_directory;
+    if ( ! is_dir($thumbdir) ) { mkdir($thumbdir); }
+    $thumbfile = $thumbdir . '/' . $image;
+    if ( is_file($thumbfile) ) { return true; }
+    list($src_width, $src_height, $src_type, $src_attr) = getimagesize($dir . '/' . $image);
+    $dst_height = ( $dst_width / $src_width ) * $src_height;
+    $src = imagecreatefromjpeg($dir . '/' . $image);
+    $dst = imagecreatetruecolor($dst_width,$dst_height);
+    imagecopyresampled($dst, $src, 0, 0, 0, 0, $dst_width, $dst_height, $src_width, $src_height);
+    imagejpeg($dst, $thumbfile, 75);
+    imagedestroy($dst);
+    return true;
+  }
+
+  function rotate($image, $dir, $direction='cw') {
+    if ( $direction != 'cw' && $direction != 'ccw' ) { return false; }
+    if ( ! is_dir($dir) ) { return false; }
+    $imagefile = $dir . '/' . $image;
+    if ( ! is_readable($imagefile) ) { return false; }
+    if ( $direction == 'cw' ) { $rotate = 90; } else { $rotate = 270; }
+    $cmd = JPEGTRAN . " -rotate " . $rotate . " -trim -outfile /tmp/" . $image . " " . $imagefile . " ; /bin/mv /tmp/" . $image . " " . $imagefile . "";
+    exec($cmd);
+    $thumbfile = $dir . '/' . $this->thumbnail_directory . '/' . $image;
+    $cmd = JPEGTRAN . " -rotate " . $rotate . " -trim -outfile /tmp/" . $image . " " . $thumbfile . " ; /bin/mv /tmp/" . $image ." " . $thumbfile . "";
+    exec($cmd);
+  }
+
+  function run() {
+
+    if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+
+      if ( $_POST['image'] && $_POST['dir'] && $_POST['rotate'] ) {
+
+        if ( $_POST['rotate'] == 'Rotate Clockwise' ) {
+          $this->rotate($_POST['image'], $_POST['dir'], 'cw');
+          header("Location: ./index.php?show_dir=" . urlencode($_POST['dir']));
+          exit;
+        } else {
+          $this->rotate($_POST['image'], $_POST['dir'], 'ccw');
+          header("Location: ./index.php?show_dir=" . urlencode($_POST['dir']));
+          exit;
+        }
+
+      }
+
+    } elseif ( is_dir(stripslashes($_GET['dir'])) && is_readable(stripslashes($_GET['dir']) . '/' . $_GET['image']) ) {
+
+      $this->show_image($_GET['image'], stripslashes($_GET['dir']));
+
+    } elseif ( is_dir(stripslashes($_GET['show_dir'])) ) {
+
+      $this->show_dir(stripslashes($_GET['show_dir']));
+
+    } else {
+
+      $this->print_directory_list( dirname($_SERVER['SCRIPT_FILENAME']) );
+
+    }
+
+  }
+
+}
+
+?>

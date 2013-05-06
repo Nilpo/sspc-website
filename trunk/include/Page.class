@@ -1,0 +1,137 @@
+<?
+/*
+##################################################
+#
+# $RCSfile: Page.class,v $
+# Original Author...: Anthony L. Awtrey
+# Version...........: $Revision: 1.8 $
+# Last Modified By..: $Author: aawtrey $
+# Last Modified.....: $Date: 2005/05/14 00:18:39 $
+#
+# Copyright 2005 Anthony L. Awtrey
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
+#
+*/
+
+class Page {
+
+  var $template = "default.tpl";
+  var $relpath;
+  var $reluri;
+  var $relfile;
+  var $title    = "St. Stephen Fellowship of Presbyterians";
+  var $header;
+  var $description;
+  var $favicon  = "/favicon.ico";
+  var $keywords = "St. Stephen Fellowship of Presbyterians,jesus,church,martyr's rock";
+  var $colors   = array(
+                       'BACKGROUND_COLOR'   => "#FFFFFF",
+                       'ACCENT_COLOR'       => "#F0F0FF",
+                       'HEADING_COLOR'      => "#000090",
+                       'TEXT_COLOR'         => "#000000",
+                       'REGULAR_LINK_COLOR' => "#000090",
+                       'VISITED_LINK_COLOR' => "#000090",
+                       'ACTIVE_LINK_COLOR'  => "#0000FF",
+                       'HOVER_LINK_COLOR'   => "#0000FF"
+                       );
+  var $menu     = array();
+  var $content;
+
+  /*
+   * Class initialization
+   */
+  function Page() {
+    global $_SERVER;
+    global $_SESSION;
+    global $_SERVER;
+    global $_POST;
+    global $_GET;
+    if ( is_file("menu.ini") ) {
+      include_once("menu.ini");
+      $this->menu = $menu;
+    }
+    $this->relpath = constant("RELPATH");
+    $this->reluri  = constant("RELURI");
+    if ( defined("RELFILE") ) {
+      $this->relfile = constant("RELFILE");
+    }
+  }
+
+  function generate_menu() {
+    $output  = "";
+    if ( $this->relpath == "" && $this->relfile == "" ) {
+      $output .= "      <li><a href=\"#\" class=\"active\">Home</a></li>\n";
+    } elseif ( $this->relfile != "" ) {
+      $output .= "      <li><a href=\"./\">Home</a></li>\n";
+    } else {
+      $output .= "      <li><a href=\"../\">Home</a></li>\n";
+    }
+    if ( count($this->menu) > 0 ) {
+      while ( list($key,$val) = each ($this->menu) ) {
+        if ( ereg($val,basename($_SERVER["SCRIPT_FILENAME"])) ) {
+          $output .= "      <li><a href=\"./\" class=\"active\">$key</a></li>\n";
+        } else {
+          $output .= "      <li><a href=\"$val\">$key</a></li>\n";
+        }
+      }
+    }
+    return($output);
+  }
+
+  function display() {
+    if ( $this->template == 'blank' ) {
+      $this_page = $this->content;
+    } else {
+      $this_page = file_get_contents($this->template,true);
+      $this_page = ereg_replace("\[TITLE\]","$this->title",$this_page);
+      $this_page = ereg_replace("\[FAVICON\]","$this->favicon",$this_page);
+      while ( list($key,$val) = each ($this->colors) ) {
+        $this_page = ereg_replace("\[$key\]","$val",$this_page);
+      }
+      $this_page = ereg_replace("\[DESCRIPTION\]","$this->description",$this_page);
+      $this_page = ereg_replace("\[KEYWORDS\]","$this->keywords",$this_page);
+      $this_page = ereg_replace("\[HEAD\]","$this->head",$this_page);
+      $this_page = ereg_replace("\[HEADER\]","$this->header",$this_page);
+      $this_page = ereg_replace("\[MENU\]",$this->generate_menu(),$this_page);
+      $this_page = ereg_replace("\[CONTENT\]","$this->content",$this_page);
+      $this_page = ereg_replace("\[LEFTCONTENT\]","$this->leftcontent",$this_page);
+      $this_page = ereg_replace("\[RIGHTCONTENT\]","$this->rightcontent",$this_page);
+      $this_page = ereg_replace("\[YEAR\]",date("Y"),$this_page);
+      $this_page = ereg_replace("\[LAST_MODIFIED\]",date("H:i Y/m/d",filemtime(basename($_SERVER['SCRIPT_FILENAME']))),$this_page);
+      $this_page = ereg_replace("\[RELPATH\]","$this->relpath",$this_page);
+      if ( $_SESSION['login'] ) {
+        $account = new Data("account");
+        $result = $account->get_record_by_id($_SESSION['login']);
+        $account  = $result['name'];
+        $account .= " [<a href=\"" . $this->relpath . "account.php?action=edit\">Change Information</a>]";
+        $account .= " [<a href=\"" . $this->relpath . "account.php?action=logout&backto=" . $this->reluri . "\">Logout</a>]";
+        $this_page = ereg_replace("\[ACCOUNT\]",$account,$this_page);
+      } elseif ( $this->relfile != 'account.php' ) {
+        $account .= "<a href=\"" . $this->relpath . "account.php?backto=" . $this->reluri . "\">Login</a>\n";
+        $this_page = ereg_replace("\[ACCOUNT\]",$account,$this_page);
+      }
+    }
+    $this_page = stripslashes($this_page);
+    header("Content-Length: ".strlen($this_page) );
+    //header("Vary: Accept");
+    //header("Content-Type: application/xhtml+xml; charset=utf-8");
+    echo $this_page;
+    exit;
+  }
+
+}
+
+?>

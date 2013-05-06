@@ -1,0 +1,233 @@
+<?
+/*
+##################################################
+#
+# $RCSfile: Event.class,v $
+# Original Author...: Anthony L. Awtrey
+# Version...........: $Revision: 1.6 $
+# Last Modified By..: $Author: aawtrey $
+# Last Modified.....: $Date: 2005/06/03 18:37:13 $
+#
+# Copyright 2005 Anthony L. Awtrey
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
+#
+*/
+
+class Event {
+
+  var $page;
+  var $bdata;
+  var $account;
+  var $relpath;
+  var $error_string;
+
+  /*
+   * Class initialization
+   */
+  function Event() {
+    global $_SERVER;
+    global $_SESSION;
+    global $_REQUEST;
+    global $_POST;
+    global $_GET;
+    $this->page              = new Page();
+    $this->page->template    = "event.tpl";
+    $this->page->title       = "";
+    $this->page->description = "";
+    $this->bdata             = new Data("event");
+    if ( $_SESSION['login'] ) {
+      $this->account           = $_SESSION['login'];
+    } else {
+      $this->account           = False;
+    }
+    $this->relpath = constant("RELPATH");
+  }
+
+  function print_event($event) {
+    if ( is_array($event) ) {
+      $account = new Data("account");
+      $result = $account->get_record_by_id($event['account']);
+      $account  = $result['name'];
+      $this->page->header = $event['title'];
+      $this->page->content .= "<p>\n";
+      $this->page->content .= "<b>" . $account . "</b><br />\n";
+      $this->page->content .= "<u>Date:</u> " . date('F dS Y', strtotime($event['sdate']) ) . "<br />\n";
+      $this->page->content .= "</p>\n";
+      $this->page->content .= "<p>\n";
+      $this->page->content .= nl2br(htmlentity2str($event['description'])) . "<br />\n";
+      $this->page->content .= "</p>\n";
+      $this->page->content .= "<div class=\"graybg small\">\n";
+      if ( $this->account ) {
+        $this->page->content .= "<div class=\"left\">";
+        $this->page->content .= "[ <a href=\"index.php?eventid=" . $event['id'] . "&action=edit\">Edit this event</a> ]";
+        $this->page->content .= "[ <a href=\"index.php?eventid=" . $event['id'] . "&action=delete\">Delete this event</a> ]";
+        $this->page->content .= "</div>\n";
+      }
+      $this->page->content .= "<div class=\"right\">";
+      $this->page->content .= "</div>\n";
+      $this->page->content .= "</div>\n";
+    } else {
+      $this->page->content .= "<p>\n";
+      $this->page->content .= "There was no event found.\n";
+      $this->page->content .= "</p>\n";
+    }
+    $this->page->display();
+  }
+
+  function print_event_form($event) {
+    if (!$event['inSdate'])   { $event['inSdate'] = date("Y-m-d H:i:s"); }
+    if (!$event['inAccount']) { $event['inAccount'] = $this->account; }
+    if ($this->error_string) { $this->page->content .= "<p class=\"error\">" . $this->error_string . "</p>\n"; }
+    require_once('Form.class');
+    $form = new Form('index.php','post');
+    $form->hidden('action',$event['action']);
+    $form->hidden('inEventid',$event['inEventid']);
+    $form->hidden('inAccount',$event['inAccount']);
+    $form->text('Date','inSdate',$event['inSdate'],60,40,1);
+    $form->text('Title','inTitle',$event['inTitle'],60,255,1);
+    $form->textarea('Description','inDescription',htmlentity2str($event['inDescription']),10,50,1);
+    $form->submit('submit',ucwords($event['action']));
+    $form->submit('submit','Cancel');
+    $this->page->content .= $form->render();
+    $this->page->display();
+  }
+
+  function print_event_delete_confirmation($event) {
+    $this->page->header      = "Confirm Deletion";
+    $this->page->content .= "<p class=\"error\">\n";
+    $this->page->content .= "<b>Warning!</b> You are about to delete the event entitled:<br /><br />\n";
+    $this->page->content .= "\"" . $event['title'] . "\"<br /><br />\n";
+    $this->page->content .= "Click 'Delete' again if you are sure.\n";
+    $this->page->content .= "</p>\n";
+    require_once('Form.class');
+    $form = new Form('index.php','post');
+    $form->hidden('action','delete');
+    $form->hidden('inEventid',$event['id']);
+    $form->submit('submit','Delete');
+    $form->submit('submit','Cancel');
+    $this->page->content .= $form->render();
+    $this->page->display();
+  }
+
+  function run() {
+
+    if ( $_SERVER["REQUEST_METHOD"] == 'POST' ) {
+
+      if ( $_POST['submit'] == 'Cancel' )  { redirect('./'.$_POST['inEventid']); }
+
+      if ( $_POST['action'] == 'delete' && ereg("^[0-9]{6}$",$_POST['inEventid']) ) {
+
+        if ( $this->bdata->delete_record_by_id($_POST['inEventid']) ) {
+          redirect('../');
+        } else {
+          $this->page->title   = "An Error Occurred!";
+          $this->page->title   = "An error occurred when trying to delete an event.";
+          $this->page->content = "Unable to delete event!";
+          $this->page->display();
+        }
+
+      } elseif ( $_POST['action'] == 'edit' || $_POST['action'] == 'add' ) {
+
+        if ( $_POST['inAccount'] && $_POST['inSdate'] && $_POST['inTitle'] && $_POST['inDescription'] ) {
+
+          $this->bdata->set_attribute('id', $_POST['inEventid']);
+          $this->bdata->set_attribute('account', $_POST['inAccount']);
+          $this->bdata->set_attribute('sdate', $_POST['inSdate']);
+          $this->bdata->set_attribute('title', $_POST['inTitle']);
+          $this->bdata->set_attribute('description', htmlentity2str($_POST['inDescription']));
+          if ( $this->bdata->save() ) {
+            redirect('../');
+          } else {
+            $this->page->title   = "An Error Occurred!";
+            $this->page->title   = "An error occurred when trying to save an event.";
+            $this->page->content = "Unable to save event!";
+            $this->page->display();
+          }
+  
+        } else {
+
+          $this->page->title       = "Edit this event";
+          $this->page->description = "Please edit this event.";
+          $this->page->menu = array();
+          $this->page->relfile = $this->page->reluri . $_POST['inEventid'];
+          $this->error_string = "You must provide input for each field!\n";
+          $this->print_event_form($_POST);
+
+        }
+
+      }
+
+    } elseif ( $_GET['action'] == 'delete' && ereg("^[0-9]{6}$",$_GET['eventid']) && $this->account ) {
+
+      $this->page->menu = array();
+      $this->page->relfile = $this->page->reluri . $_GET['eventid'];
+      $event = $this->bdata->get_record_by_id($_GET['eventid']);
+      $this->print_event_delete_confirmation($event);
+
+    } elseif ( $_GET['action'] == 'add' || $_GET['action'] == 'edit' ) {
+
+      if ( $_GET['action'] == 'add' ) {
+        $this->page->header      = "Add an Event";
+      } else {
+        $this->page->header      = "Edit an Event";
+      }
+      $p = array();
+      if ($_GET['eventid']) {
+        list($p['inEventid'], $p['inAccount'], $p['inSdate'], $p['inTitle'], $p['inDescription']) = array_values($this->bdata->get_record_by_id($_GET['eventid']));
+      }
+      $p['action'] = $_GET['action'];
+      $this->page->menu = array();
+      if ($_GET['eventid']) {
+        $this->page->relfile = $this->page->reluri . $_GET['eventid'];
+      } else {
+        $this->page->relfile = 'index.php';
+      }
+      $this->print_event_form($p);
+
+    } elseif (!$_GET['action']) {
+
+      if (ereg("^[0-9]{6}$",$_GET['eventid'])) {
+
+        $this->page->relfile = $this->page->reluri . $_GET['eventid'];
+        $event = $this->bdata->get_record_by_id($_GET['eventid']);
+        $this->print_event($event);
+
+      } else {
+
+        if ( ! $_SESSION['login'] ) { redirect('../'); }
+
+        $this->page->header      = "Add an Event";
+        $p = array();
+        $p['action'] = 'add';
+        $this->page->menu = array();
+        $this->page->relfile = 'index.php';
+        $this->print_event_form($p);
+
+      }
+
+    } else {
+
+      $this->page->title       = "I'm really confused.";
+      $this->page->description = "Something very strange is going on...";
+      $this->page->content     = "<P>I got nothin here, Buddy... Do really you know what you are looking for?</P>\n";
+      $this->page->display();
+    }
+
+  }
+
+}
+
+?>

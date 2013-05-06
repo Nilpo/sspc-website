@@ -1,0 +1,124 @@
+<?
+/*
+##################################################
+#
+# Filename..........: $RCSfile: Email.class,v $
+# Original Author...: Anthony L. Awtrey
+# Version...........: $Revision: 1.2 $
+# Last Modified By..: $Author: aawtrey $
+# Last Modified.....: $Date: 2005/05/11 18:15:56 $
+#
+# Copyright 2005 Anthony Awtrey
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+*/
+
+class Email {
+
+  var $to;
+  var $from;
+  var $subject;
+  var $headers;
+  var $body;
+
+  /*
+   * Class initialization
+   */
+  function Email() {
+    global $_SERVER;
+    global $_SESSION;
+    global $_REQUEST;
+    global $_POST;
+    global $_GET;
+    $this->to      = 'tony@awtrey.com';
+    $this->from    = 'webmaster@awtrey.com';
+    $this->subject = '';
+    $this->headers = '';
+    $this->body    = '';
+  }
+
+  function _checkEmail($inEmail) {
+    if( preg_match("/^( [a-zA-Z0-9] )+( [a-zA-Z0-9\._-] )*@( [a-zA-Z0-9_-] )+( [a-zA-Z0-9\._-] +)+$/" , $inEmail) ){
+      list($username,$domain)=split('@',$inEmail);
+      if( !checkdnsrr($domain,'MX') ) {
+        return false;
+      }
+      return true;
+    }
+    return false;
+  }
+
+  function setTo($inTo) {
+    if ( $this->_checkEmail($inTo) ) {
+      return false;
+    }
+    $this->to = $inTo;
+    return true;
+  }
+
+  function getTo() {
+    return $this->to;
+  }
+
+  function setFrom($inFrom) {
+    if ( $this->_checkEmail($inFrom) ) {
+      return false;
+    }
+    $this->from = $inFrom;
+    return true;
+  }
+
+  function getFrom() {
+    return $this->from;
+  }
+
+  function setSubject($inSubject) {
+    $this->subject = $inSubject;
+    return true;
+  }
+
+  function getSubject() {
+    return $this->subject;
+  }
+
+  function setHeaders($inHeaders) {
+    $this->headers = $inHeaders;
+    return true;
+  }
+
+  function getHeaders() {
+    return $this->headers;
+  }
+
+  function setBody($inBody) {
+    $this->body = $inBody;
+    return true;
+  }
+
+  function getBody() {
+    return $this->body;
+  }
+
+  function send() {
+    if ( $this->getFrom() != '' ) {
+      $this->setHeaders( 'From: ' . $this->getFrom() . "\r\n" . 'Reply-To: ' . $this->getFrom() . "\r\n" );
+    }
+    return mail( $this->getTo(), $this->getSubject(), $this->getBody(), $this->getHeaders() );
+  }
+
+}
+
+?>
