@@ -75,14 +75,14 @@ $last_day = get_last_dom($year,$month);
 
 # Add 7:30pm Thusday night spanish bible study
 for ( $i = $first_sunday; $i <= $last_day; $i = $i+7 ) {
-  $ts = intval(gmmktime(9,30,0,$month,$i,$year));
-  $c->set_appt('Contemporary Worship',gmstrftime('%Y',$ts),gmstrftime('%m',$ts),gmstrftime('%d',$ts),gmstrftime('%H',$ts),gmstrftime('%M',$ts));
-  $ts = intval(gmmktime(11,0,0,$month,$i,$year));
-  $c->set_appt('Traditional Worship',gmstrftime('%Y',$ts),gmstrftime('%m',$ts),gmstrftime('%d',$ts),gmstrftime('%H',$ts),gmstrftime('%M',$ts));
-  if ($year >= "2011" && $month >= "03" ) {
-    $ts = intval(gmmktime(14,0,0,$month,$i,$year));
-    $c->set_appt('Servicio Hispano',gmstrftime('%Y',$ts),gmstrftime('%m',$ts),gmstrftime('%d',$ts),gmstrftime('%H',$ts),gmstrftime('%M',$ts));
+  if ( $month != 12 ) {
+    $ts = intval(gmmktime(9,30,0,$month,$i,$year));
+    $c->set_appt('Contemporary Worship',gmstrftime('%Y',$ts),gmstrftime('%m',$ts),gmstrftime('%d',$ts),gmstrftime('%H',$ts),gmstrftime('%M',$ts));
+    $ts = intval(gmmktime(11,0,0,$month,$i,$year));
+    $c->set_appt('Traditional Worship',gmstrftime('%Y',$ts),gmstrftime('%m',$ts),gmstrftime('%d',$ts),gmstrftime('%H',$ts),gmstrftime('%M',$ts));
   }
+  $ts = intval(gmmktime(11,1,0,$month,$i,$year));
+  $c->set_appt('Servicio Hispano',gmstrftime('%Y',$ts),gmstrftime('%m',$ts),gmstrftime('%d',$ts),gmstrftime('%H',$ts),gmstrftime('%M',$ts));
 }
 
 $event = new Data("event");
