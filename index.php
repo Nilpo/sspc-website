@@ -62,7 +62,7 @@ $page->leftcontent = $blog->get_excerpts(3);
 
 $page->rightcontent = <<<EOF
 
-      <!-- HINT: Set any div's class to "box" to encapsulate it in (you guessed it) a box -->
+      <!-- HINT: Set any div's class to "box" to encapsulate it in (you guessed it) a box
       <div class="box">
         <h4>Spotlight Event</h4>
         <div class="contentarea">
@@ -70,11 +70,13 @@ $page->rightcontent = <<<EOF
           <p>Join us on April 5th for our <a href="calendar/event/000186">Maunday Thursday service</a>.</p>
         </div>
       </div>
+      -->
     
       <div>
         <h4>Upcoming Events</h4>
         <div class="contentarea">
           <ul class="linklist">
+
 EOF;
 
 $event = new Data("event");
@@ -86,23 +88,23 @@ foreach ( $results as $key => $val) {
   $page->rightcontent .= '            <li>'.gmstrftime("%m-%d-%Y",$ts).' <a href="calendar/event/'.$key.'">'.$val['title'].'</a></li>';
 }
 
-/*
-            <li>07-10-2010 <a href="calendar/">Popcorn and a Movie</a></li>
-            <li>08-14-2010 <a href="calendar/">Popcorn and a Movie</a></li>
-*/
-
 $page->rightcontent .= <<<EOF
+
           </ul>
         </div>
       </div>
 
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <br /><br />
+
       <div class="box">
         <div class="contentarea">
-          <h4>Servicio Hispano</h4>
-          <p>
-            El Domingo, 6 de marzo a las 2:00 pm se inicia el primer servicio
-            en espa&ntilde;o. El Rev. Amadeo Torre dar&aacute; un mensaje de esperanza y promesa.
-            Esperamos que se unan a nosotros para nuestro culto de adoraci&oacute;n.
+          <h4>Service Times</h4>
+         <p>
+            Sunday 9:30am <br />&nbsp;&nbsp;Contemporary Worship<br /><br />
+            Sunday 11:00am <br />&nbsp;&nbsp;Traditional Worship<br /><br />
           </p>
         </div>
       </div>

@@ -36,7 +36,7 @@ class Page {
   var $header;
   var $description;
   var $favicon  = "/favicon.ico";
-  var $keywords = "St. Stephen Fellowship of Presbyterians,jesus,church,martyr's rock";
+  var $keywords = "St. Stephen Fellowship of Presbyterians,jesus,church";
   var $colors   = array(
                        'BACKGROUND_COLOR'   => "#FFFFFF",
                        'ACCENT_COLOR'       => "#F0F0FF",

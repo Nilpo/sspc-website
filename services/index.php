@@ -54,7 +54,7 @@ $page->leftcontent     = <<<EOF
         <div class="post">
           <h4>Contemporary Worship Service</h4>
           <div class="contentarea">
-            <p>Our contemporary service provides a free form service supported by our praise team Martyr's Rock. It focuses on the praise and worship of God through modern songs. Child care is provided and older children are welcome to participate in Kidz Klub.</p>
+            <p>Our contemporary service provides a free form service supported by our praise team Renewed. It focuses on the praise and worship of God through modern songs. Child care is provided and older children are welcome to participate in Kidz Klub.</p>
           </div>
         </div>
 
@@ -62,13 +62,6 @@ $page->leftcontent     = <<<EOF
           <h4>Traditional Worship Service</h4>
           <div class="contentarea">
             <p>Our traditional service provides a structured service with a wide range of musical styles; from choral anthems, gospel songs and other special music. It also includes corporate readings and traditional communal forms such as the Lord's Prayer spoken in unison. Child care is provided and older children are welcome to participate in Kidz Klub.</p>
-          </div>
-        </div>
-
-        <div class="post">
-          <h4>Servicio Hispano</h4>
-          <div class="contentarea">
-            <p>Todos los Domingo a las 11:00 am servicios en español. El Rev. Amadeo Torre dará un mensaje de esperanza y promesa. Esperamos que se unan a nosotros para nuestro culto de adoración. </p>
           </div>
         </div>
 
@@ -82,10 +75,8 @@ $page->rightcontent     = <<<EOF
         <div class="contentarea">
           <p>
             Sunday 9:30am <br />&nbsp;&nbsp;Contemporary Worship<br /><br />
-            Sunday 9:30am <br />&nbsp;&nbsp;Sunday School<br /><br />
+            Sunday 10:30am <br />&nbsp;&nbsp;Kids Bible Encounter<br /><br />
             Sunday 11:00am <br />&nbsp;&nbsp;Traditional Worship<br /><br />
-            Sunday 11:00am <br />&nbsp;&nbsp;Servicio Hispano<br /><br />
-            Tuesday 7:00pm <br />&nbsp;&nbsp;Martyr's Rock Rehearsal<br /><br />
             Thursday 7:00pm <br />&nbsp;&nbsp;Choir Rehearsal
           </p>
         </div>

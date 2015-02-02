@@ -76,8 +76,8 @@ $t->add_cell('<a href="mailto:music@sspch.org">music@sspch.org</a>');
 $t->add_row();
 
 $t->add_cell('Clerk of Session');
-$t->add_cell('Joyce Kuhn');
-$t->add_cell('(407) 277-4351');
+$t->add_cell('Georgia Rife');
+$t->add_cell('N/A');
 $t->add_cell('<a href="mailto:clerk@sspch.org">clerk@sspch.org</a>');
 $t->add_row();
 $contacts = $t->render();

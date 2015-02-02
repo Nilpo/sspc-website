@@ -89,8 +89,6 @@ if ( $_SERVER["SERVER_NAME"] == 'sspch.org' ||
      $_SERVER["SERVER_NAME"] == 'www.sspch.org' ||
      $_SERVER["SERVER_NAME"] == 'ststephenpres.org' ||
      $_SERVER["SERVER_NAME"] == 'www.ststephenpres.org' ||
-     $_SERVER["SERVER_NAME"] == 'martyrsrock.com' ||
-     $_SERVER["SERVER_NAME"] == 'www.martyrsrock.com' ||
      $_SERVER["SERVER_NAME"] == '216.92.205.7' ) {
   define("ADODB_PATH","/usr/home/awtrey/share/php/adodb/adodb.inc.php");
   define("DB_HOST_NAME","db48c.pair.com");
