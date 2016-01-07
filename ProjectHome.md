@@ -1,0 +1,1 @@
+This project is for coordinating the development of the St. Stephen Presbyterian Church website.
